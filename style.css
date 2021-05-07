@@ -9,6 +9,14 @@ button:focus {
     outline: 0;
 }
 
+.dropdown-toggle::after{
+    height: 6px;
+    width: 6px;
+    border: 1px solid white;
+    border-width: 1px 1px 0 0;
+    transform: rotate(135deg);
+}
+
 .header-top {
     height: 44px;
     background: #1A2B48;
@@ -645,6 +653,12 @@ footer input::placeholder {
     .header-menu-inner {
         align-items: center;
         justify-content: center;
+        position: relative;
+    }
+
+    .menu-mobile{
+        position: absolute;
+        left: 14px;
     }
 
     .banner {
