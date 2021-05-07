@@ -2,6 +2,7 @@ body {
     background: #F8F8F8;
     color: #343843;
     position: relative;
+    font-family: 'Roboto';
 }
 a:hover{
     text-decoration: none;
@@ -79,6 +80,7 @@ button:focus {
     font-size: 18px;
     line-height: 21px;
     cursor: pointer;
+    color: #343843;
 }
 
 .nav-menu .nav-menu-item.active,
@@ -769,5 +771,15 @@ footer input::placeholder {
     }
     .page .slick-list{
         margin: 0;
+    }
+    .nav-menu{
+        position: absolute;
+        top: 54px;
+        width: 100%;
+        background: white;
+    }
+    .nav-menu a{
+        display: block;
+        width: 100%;
     }
 }
