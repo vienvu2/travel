@@ -213,6 +213,7 @@ button:focus {
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
     position: relative;
+    margin: 0 15px;
 }
 
 .book-item:hover .book-item-btn {
@@ -264,6 +265,10 @@ button:focus {
     cursor: pointer;
 }
 
+.book-item-btn img {
+    display: inline-block !important;
+}
+
 .book-item-location {
 
     font-weight: 300;
@@ -276,6 +281,7 @@ button:focus {
 .book-item-location img {
     margin-right: 6px;
     vertical-align: top;
+    display: inline-block !important;
 }
 
 .book-item h4 {
@@ -315,6 +321,7 @@ button:focus {
 }
 
 .book-item-time img {
+    display: inline-block !important;
     vertical-align: top;
 }
 
@@ -350,6 +357,8 @@ button:focus {
 .news-item {
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+    margin: 0 15px;
 }
 
 .news-item h5 {
@@ -365,6 +374,7 @@ button:focus {
     width: 100%;
     object-fit: cover;
     object-position: center;
+
 }
 
 .news-item-location {
@@ -375,6 +385,7 @@ button:focus {
 }
 
 .news-item-location img {
+    display: inline-block !important;
     margin-right: 5px;
 }
 
@@ -570,6 +581,33 @@ footer input::placeholder {
     color: white;
 }
 
+.slick-dots {
+    list-style: none;
+    text-align: center;
+    padding-inline-start: 0;
+}
+
+.slick-dots li {
+    display: inline-block;
+}
+
+.slick-dots li button {
+    font-size: 0;
+
+    width: 9px;
+    height: 9px;
+    appearance: none;
+    border: 0;
+    padding: 0;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.slick-dots li.slick-active button {
+    background: #FF9332;
+
+}
+
 @media only screen and (max-width: 768px) {
     .header-top {
         height: 50px;
@@ -581,11 +619,13 @@ footer input::placeholder {
         line-height: 16px;
         height: 25px;
     }
-    .header-menu{
+
+    .header-menu {
         padding-top: 11px;
         height: 65px;
     }
-    .header-menu .logo{
+
+    .header-menu .logo {
         height: 40px;
     }
 
@@ -659,5 +699,23 @@ footer input::placeholder {
         font-size: 14px;
         line-height: 16px;
 
+    }
+
+    .page-menu {
+        white-space: nowrap;
+        overflow: auto;
+    }
+
+    .page-menu a {
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: 26px;
+        padding-bottom: 10px;
+    }
+    .book-item{
+        margin: 0;
+    }
+    .news-item{
+        margin: 0;
     }
 }
