@@ -767,4 +767,7 @@ footer input::placeholder {
         padding-left: 15px;
         padding-right: 15px;
     }
+    .page .slick-list{
+        margin: 0;
+    }
 }
