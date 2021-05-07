@@ -410,6 +410,11 @@ button:focus {
 
 .customer-item {
     position: relative;
+    margin: 0 15px;
+}
+
+.customer-item-rate img {
+    display: inline-block !important;
 }
 
 .customer-item-content {
@@ -712,10 +717,21 @@ footer input::placeholder {
         margin-right: 26px;
         padding-bottom: 10px;
     }
-    .book-item{
+
+    .book-item {
         margin: 0;
     }
-    .news-item{
+
+    .news-item {
         margin: 0;
+    }
+
+    .footer-last {
+        width: 80%;
+    }
+
+    footer {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
