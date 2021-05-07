@@ -91,7 +91,6 @@ button:focus {
 .banner {
     min-height: 686px;
     padding-top: 126px;
-    background: url(./assets/img/mountain.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -194,7 +193,7 @@ button:focus {
     height: 11px;
     width: 83px;
     margin: 0 auto;
-    background: url(./img/underline.svg);
+    background: url(../img/underline.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -455,7 +454,7 @@ button:focus {
     height: 33px;
     top: 29px;
     left: -10px;
-    background: url(./img/quote.svg);
+    background: url(../img/quote.svg);
 
 
 }
