@@ -1,0 +1,181 @@
+body {
+    background: #F8F8F8;
+    color: #343843;
+}
+
+.header-top {
+    height: 44px;
+    background: #1A2B48;
+    padding-top: 7px;
+}
+
+.header-top a {
+    margin-right: 24px;
+}
+
+.header-top button {
+    border: 1px solid #FFFFFF;
+    border-radius: 150px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    background: transparent;
+    padding: 5px 20px;
+}
+
+.header-menu {
+    background: #FFFFFF90;
+    height: 86px;
+    padding: 15px 0;
+
+}
+
+.header-menu-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu .logo {
+    height: 56px;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu .nav-menu-item {
+    padding: 20px 30px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+.nav-menu .nav-menu-item.active,
+.nav-menu .nav-menu-item:hover {
+    color: #FF9332;
+}
+
+.banner {
+    min-height: 686px;
+    padding-top: 126px;
+    background: url(./img/mountain.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.banner h1 {
+    color: #FFFFFF;
+    font-weight: 200;
+    font-size: 80px;
+    line-height: 94px;
+    text-align: center;
+}
+
+.banner h1 b {
+    display: block;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.banner h3 {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 116px;
+}
+
+.banner .input-search {
+    max-width: 100%;
+    width: 852px;
+    display: flex;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 204px;
+    margin: 0 auto;
+}
+
+.banner .input-search img {
+    width: 20px;
+    margin: auto 20px;
+}
+
+.banner .input-search input {
+    width: 100%;
+    border: 0;
+
+    font-style: italic;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.banner .input-search input:focus {
+    outline: 0;
+}
+
+.banner .suggest {
+    color: white;
+    margin: 0 auto;
+    margin-top: 11px;
+    max-width: 100%;
+    width: 852px;
+    padding-left: 50px;
+}
+
+.banner .suggest a {
+
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: underline;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.page {
+    padding-top: 75px;
+}
+
+.page h3 {
+
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.page .underline {
+    height: 11px;
+    width: 83px;
+    margin: 0 auto;
+    background: url(./img/underline.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.page-menu {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.page-menu a {
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 44px;
+    display: inline-block;
+}
+
+.page-menu a.active {
+    font-weight: 500;
+    color: #FF9332;
+}
