@@ -528,6 +528,14 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script>
+    $(document).click(function (event) {
+        var $target = $(event.target);
+        if (!$target.closest('.header-menu').length &&
+            $('.nav-menu').is(":visible")) {
+            $('.nav-menu').hide();
+        }
+    });
+
     $('.menu-mobile').click(function () {
         $('.nav-menu').toggle()
     })
