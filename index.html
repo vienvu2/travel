@@ -504,7 +504,7 @@
 
 <script>
     $('#book-items').slick({
-        infinite: false,
+        // infinite: false,
         dots: true,
         arrows: false,
         slidesToShow: 4,
@@ -514,13 +514,14 @@
             settings: {
                 slidesToShow: 1,
                 centerMode: false,
-                slidesToScroll: 1
+                centerMode: true,
+                slidesToScroll: 1,
+                variableWidth: true
             }
         }]
     });
 
     $('#guide-items').slick({
-        infinite: false,
         dots: true,
         arrows: false,
         slidesToShow: 3,
@@ -530,13 +531,14 @@
             settings: {
                 slidesToShow: 1,
                 centerMode: false,
-                slidesToScroll: 1
+                centerMode: true,
+                slidesToScroll: 1,
+                variableWidth: true
             }
         }]
     });
 
     $('#news-items').slick({
-        infinite: false,
         dots: true,
         arrows: false,
         slidesToShow: 3,
@@ -546,7 +548,9 @@
             settings: {
                 slidesToShow: 1,
                 centerMode: false,
-                slidesToScroll: 1
+                centerMode: true,
+                slidesToScroll: 1,
+                variableWidth: true
             }
         }]
     });
@@ -562,7 +566,7 @@
             settings: {
                 slidesToShow: 1,
                 centerMode: false,
-                slidesToScroll: 1
+                slidesToScroll: 1,
             }
         }]
     });
