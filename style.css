@@ -37,13 +37,13 @@ button:focus {
     padding: 15px 0;
     position: sticky;
     top: -1px;
-    z-index: 1;
+    z-index: 2;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
 }
+
 .header-top a.btn-login,
 .header-top .dropdown a.dropdown-toggle {
     color: white;
-
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
@@ -230,6 +230,13 @@ button:focus {
 .book-item-img {
     position: relative;
     height: 200px;
+}
+
+.book-item-img>img {
+    object-fit: cover;
+    object-position: center;
+    height: 200px;
+    width: 100%;
 }
 
 .book-item-btn {
@@ -561,4 +568,96 @@ footer input {
 
 footer input::placeholder {
     color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-top {
+        height: 50px;
+        padding-top: 12px;
+    }
+
+    .header-top button {
+        font-size: 14px;
+        line-height: 16px;
+        height: 25px;
+    }
+    .header-menu{
+        padding-top: 11px;
+        height: 65px;
+    }
+    .header-menu .logo{
+        height: 40px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .page.more {
+        display: none;
+    }
+
+    .header-menu-inner {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner {
+        padding-top: 54px;
+        padding-bottom: 24px;
+        min-height: auto;
+    }
+
+    .banner h1 {
+
+        font-size: 41.81px;
+        line-height: 49px;
+    }
+
+    .banner h3 {
+        font-weight: 300;
+        font-size: 12.543px;
+        line-height: 15px;
+        margin-bottom: 37px;
+    }
+
+    .banner .input-search {
+        height: 45px;
+    }
+
+    .banner .suggest {
+        padding-left: 20px;
+
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .banner .suggest {
+        font-size: 14px;
+        line-height: 16px;
+
+    }
+
+    .page {
+        padding-top: 24px;
+    }
+
+    .page h3 {
+
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .header-top a {
+        margin-right: 10px;
+
+    }
+
+    .header-top a.btn-login,
+    .header-top .dropdown a.dropdown-toggle {
+
+        font-size: 14px;
+        line-height: 16px;
+
+    }
 }
