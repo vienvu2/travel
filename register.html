@@ -94,8 +94,8 @@
         </div>
     </div>
     <section class="page login">
-        <form>
-            <h3>Đăng nhập</h3>
+        <div class="form">
+            <h3>Đăng ký</h3>
             <p class="login-sub">Tài khoản VianTravel sẽ được đăng nhập bằng số điện thoại hoặc tài khoản bên thứ ba đã
                 đăng ký</p>
             <div class="row">
@@ -114,7 +114,7 @@
             </div>
             <div class="text-center">
                 <p class="login-or">
-                    hoặc đăng nhập bằng
+                    hoặc đăng ký bằng
                 </p>
                 <div class="login-or-line border-bottom"></div>
             </div>
@@ -131,18 +131,20 @@
                     Số điện thoại
                 </div>
             </div>
-            <div id="email-mode">
-                <div class="input-group">
-                    <input placeholder="Địa chỉ email" type="text" />
-                    <img src="/assets/img/ic-envelope.svg" />
-                </div>
-                <div class="input-group">
-                    <input placeholder="Mật khẩu" type="password" />
-                    <img src="/assets/img/ic-evelop.svg" />
-                </div>
-            </div>
+            <form id="email-mode">
 
-            <div id="phone-mode" style="display: none;" class="row">
+                <div class="input-group">
+                    <input placeholder="Địa chỉ email" type="email" required />
+                    <img src="/assets/img/ic-envelope-2.svg" />
+                </div>
+                <div class="input-group">
+                    <input placeholder="Mật khẩu" type="password" required />
+                    <img src="/assets/img/ic-eye.svg" class="toggle-pass" />
+                </div>
+                <button class="btn btn-submit mt-5">Đăng ký</button>
+            </form>
+
+            <form id="phone-mode" style="display: none;" class="row">
                 <div class="col-3">
                     <div class="input-group">
                         <select>
@@ -159,28 +161,23 @@
                 </div>
                 <div class="col-9">
                     <div class="input-group">
-                        <input placeholder="Mật khẩu" type="password" />
-                        <img src="/assets/img/ic-envelope.svg" />
+                        <input placeholder="Nhập số điện thoại" />
+                        <img src="/assets/img/ic-phone.svg" style="opacity: 0.5;" />
                     </div>
                 </div>
 
+                <button class="btn btn-submit btn-submit-outline  mt-5" type="button">Gửi mã xác nhận</button>
+                <button class="btn btn-submit">Đăng nhập</button>
 
+            </form>
+            <div>
+                <input type="checkbox"  id="checkbox"  />
+                <label for="checkbox">
+                    Tôi đồng ý với các điều khoản của VIAN TRAVEL
+                </label>
             </div>
-            <button class="btn btn-submit">Đăng nhập</button>
-            <div class="row">
-                <div class="col-6">
-                    <input type="checkbox" />
-                    <label>
-                        Nhớ tài khoản
-                    </label>
-                </div>
-                <div class="col-6 text-right">
-                    <a>Quên mật khẩu</a>
-                </div>
-            </div>
-            <p class="login-foot">Bạn chưa có tài khoản? <a href="register.html">Đăng ký ngay!</a></p>
-
-        </form>
+            <p class="login-foot">Bạn có tài khoản? <a href="/login.html">Đăng nhập ngay!</a></p>
+        </div>
     </section>
 </body>
 <script src="assets/js/jquery-3.2.1.slim.min.js">

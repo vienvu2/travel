@@ -12,22 +12,26 @@ $(document).click(function (event) {
 $(".menu-mobile").click(function () {
   $(".nav-menu").toggle();
 });
-$('.nav-menu .btn-close').click(function(){
+$(".nav-menu .btn-close").click(function () {
   $(".nav-menu").hide();
-})
+});
 
-
-$('.login .tab').click(function(){
-  $('.login .tab').removeClass('active')
-  $(this).addClass('active');
-  var target = $(this).data('target');
-  $('#email-mode').hide();
-  $('#phone-mode').hide();
-  $('#'+target).show();
-})
-$('.input-group .toggle-pass').click(function(){
-  $(this).parent().find('input').attr('type', 'text')
-})
+$(".login .tab").click(function () {
+  $(".login .tab").removeClass("active");
+  $(this).addClass("active");
+  var target = $(this).data("target");
+  $("#email-mode").hide();
+  $("#phone-mode").hide();
+  $("#" + target).show();
+});
+$(".input-group .toggle-pass").click(function () {
+  var i = $(this).parent().find("input");
+  if (i.attr("type") == "password") {
+    i.attr("type", "text");
+  } else {
+    i.attr("type", "password");
+  }
+});
 $("#book-items").slick({
   infinite: false,
   dots: true,

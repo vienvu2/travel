@@ -641,12 +641,14 @@ footer input::placeholder {
 
 .login {
     background-image: url(/assets/img/bg-login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 74px 10px;
 }
 
-.login form {
+.login .form {
     width: 591px;
-    height: 729px;
+    /* min-height: 735px; */
     background: #FFFFFF;
     padding: 35px 43px;
     margin: 0 auto;
@@ -771,7 +773,11 @@ footer input::placeholder {
     line-height: 19px;
     padding: 10px 20px;
 }
-
+.login input[type=checkbox]{
+    height: 23px;
+    width: 23px;
+    font-size: 23px;
+}
 .login .btn-submit {
     height: 55px;
     background: #FF9332;
@@ -779,7 +785,6 @@ footer input::placeholder {
     width: 100%;
     display: block;
     border: 0;
-    margin-top: 39px;
 
     font-weight: 500;
     font-size: 18px;
@@ -790,12 +795,21 @@ footer input::placeholder {
 
 }
 
+.login .btn-submit-outline{
+
+font-weight: normal;
+    background: white;
+    border: 1px solid #FF9332;
+    color: #FF9332;
+}
+
 .login .login-foot {
     text-align: center;
     margin-top: 41px;
     font-weight: 300;
     font-size: 18px;
     line-height: 21px;
+    margin-bottom: 0;
 }
 
 .login .login-foot a {
@@ -818,7 +832,9 @@ footer input::placeholder {
 .login label {
     font-weight: 300;
     font-size: 16px;
-    line-height: 19px;
+    margin-bottom: 0;
+    vertical-align: top;
+    line-height: 23px;
 }
 
 @media only screen and (max-width: 768px) {
