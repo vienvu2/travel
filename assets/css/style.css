@@ -4,9 +4,11 @@ body {
     position: relative;
     font-family: 'Roboto';
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
 }
+
 *,
 button:focus {
     outline: 0;
@@ -631,6 +633,7 @@ footer input::placeholder {
     background: #FF9332;
 
 }
+
 .page .slick-list {
     margin: 0 -15px;
 }
@@ -768,17 +771,62 @@ footer input::placeholder {
         padding-left: 15px;
         padding-right: 15px;
     }
-    .page .slick-list{
+
+    .page .slick-list {
         margin: 0;
     }
-    .nav-menu{
+
+    .nav-menu {
         position: absolute;
-        top: 54px;
-        width: 100%;
+        top: 0;
+        width: 235px;
         background: white;
+        left: 0;
+        z-index: 2;
     }
-    .nav-menu a{
+
+    .nav-menu::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #0004;
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    .nav-menu .nav-menu-header {
+        padding: 32px 0;
+        text-align: center;
+        background: #FF9332;
+        position: relative;
+    }
+
+    .nav-menu img {
+        margin-right: 14px;
+        width: 18px;
+    }
+
+    .nav-menu .nav-menu-header .btn-close {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .nav-menu .nav-menu-header h3 {
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: white;
+        margin: 0;
+    }
+
+    .nav-menu a {
         display: block;
         width: 100%;
+        background: white;
     }
 }

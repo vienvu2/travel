@@ -12,6 +12,10 @@ $(document).click(function (event) {
 $(".menu-mobile").click(function () {
   $(".nav-menu").toggle();
 });
+$('.nav-menu .btn-close').click(function(){
+  $(".nav-menu").hide();
+
+})
 $("#book-items").slick({
   infinite: false,
   dots: true,
