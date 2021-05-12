@@ -651,6 +651,7 @@ footer input::placeholder {
     background: #FFFFFF;
     padding: 35px 43px;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 .login h3 {
