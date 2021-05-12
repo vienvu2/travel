@@ -638,6 +638,189 @@ footer input::placeholder {
     margin: 0 -15px;
 }
 
+
+.login {
+    background-image: url(/assets/img/bg-login.jpg);
+    padding: 74px 10px;
+}
+
+.login form {
+    width: 591px;
+    height: 729px;
+    background: #FFFFFF;
+    padding: 35px 43px;
+    margin: 0 auto;
+}
+
+.login h3 {
+
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: left;
+}
+
+.login p.login-sub {
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    min-height: 78px;
+    opacity: 0.5;
+}
+
+.login .btn-google,
+.login .btn-facebook {
+
+    height: 55px;
+    width: 100%;
+    background: #1877F2;
+    border-radius: 98px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding-left: 20px;
+}
+
+.login .btn-google {
+    background: #EA4335;
+    padding-left: 10px;
+}
+
+.login .btn-google img,
+.login .btn-facebook img {
+    margin-right: 5px;
+    height: 27px;
+}
+
+.login .login-or {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    /* opacity: 0.5; */
+    text-align: center;
+    margin-top: 57px;
+    color: #34384350;
+    position: relative;
+    background: white;
+    z-index: 2;
+    padding: 0 20px;
+    display: inline-block;
+}
+
+.login .login-or-line {
+    margin-top: -25px;
+    margin-bottom: 35px;
+    z-index: 1;
+    position: relative;
+}
+
+.login .tabs {
+    display: flex;
+}
+
+.login .tabs .tab {
+    flex: 1;
+    display: flex;
+    text-align: center;
+
+    font-weight: 300;
+    font-size: 18px;
+    align-items: center;
+    line-height: 21px;
+    justify-content: center;
+    height: 40px;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+}
+
+.login .tabs .tab img.img-active {
+    display: none;
+}
+
+.login .tabs .tab.active {
+    color: #FF9332;
+    border-color: #FF9332;
+    font-weight: 500;
+}
+
+.login .tabs .tab.active img {
+    display: none;
+}
+
+.login .tabs .tab.active img.img-active {
+    display: inline-block;
+}
+
+.login .input-group {
+    display: flex;
+    border-bottom: 0.5px solid #00000030;
+    margin-top: 30px;
+}
+
+.login .input-group select,
+.login .input-group input {
+    /* width: 100%; */
+    flex: 1;
+    border: 0;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 10px 20px;
+}
+
+.login .btn-submit {
+    height: 55px;
+    background: #FF9332;
+    border-radius: 98px;
+    width: 100%;
+    display: block;
+    border: 0;
+    margin-top: 39px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+
+    margin-bottom: 17px;
+
+}
+
+.login .login-foot {
+    text-align: center;
+    margin-top: 41px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.login .login-foot a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #343843;
+    text-decoration: underline;
+}
+
+.login a {
+
+    color: #343843;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: underline;
+}
+
+.login label {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
 @media only screen and (max-width: 768px) {
     .slick-dots {
         display: block;

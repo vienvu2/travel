@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VianTravel</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="header-top">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <a href="/" class="d-none d-md-flex">
+                    <img width="20" src="assets/img/android.svg" />
+                </a>
+                <a href="/" class="d-none d-md-flex">
+                    <img width="20" src="assets/img/store.svg" />
+                </a>
+                <button>Trở thành đối tác</button>
+                <div class="mr-auto"></div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/img/vn-flag.jpg" />
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><img src="assets/img/vn-flag.jpg" /> VN</a>
+                        <a class="dropdown-item" href="#"><img src="assets/img/vn-flag.jpg" /> USA</a>
+                        <a class="dropdown-item" href="#"><img src="assets/img/vn-flag.jpg" /> SG</a>
+                    </div>
+                </div>
+
+                <div class="dropdown  ">
+                    <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        VND
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">VND</a>
+                        <a class="dropdown-item" href="#">USD</a>
+                        <a class="dropdown-item" href="#">SGD</a>
+                    </div>
+                </div>
+
+
+                <a class="btn-login  " href="/login.html">Đăng nhập</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="header-menu">
+        <div class="container header-menu-inner">
+            <img class="menu-mobile d-md-none" src="assets/img/ic-menu.svg" width="22" height="18" />
+            <img class="logo" src="assets/img/logo.png" />
+            <div class="nav-menu">
+                <div class="nav-menu-header d-block d-md-none">
+                    <img class="btn-close" src="assets/img/ic-close.svg" />
+                    <h3>Menu</h3>
+                </div>
+                <a class="nav-menu-item active">
+                    <img class="d-inline-block d-md-none" src="assets/img/ic-home.svg" />
+                    Trang chủ
+                </a>
+                <a href="/tour.html" class="nav-menu-item">
+                    <img class="d-inline-block d-md-none" src="assets/img/ic-tour.svg" />
+                    Tour
+                </a>
+                <a href="/hotel.html" class="nav-menu-item">
+                    <img class="d-inline-block d-md-none" src="assets/img/ic-hotel.svg" />
+                    Khách sạn
+                </a>
+                <a href="/combo.html" class="nav-menu-item">
+                    <img class="d-inline-block d-md-none" src="assets/img/ic-combo.svg" />
+                    Combo
+                </a>
+                <a href="/fight.html" class="nav-menu-item">
+                    <img class="d-inline-block d-md-none" src="assets/img/ic-flight.svg" />
+                    Fight
+                </a>
+                <a href="/visa.html" class="nav-menu-item">
+                    <img class="d-inline-block d-md-none" src="assets/img/ic-visa.svg" />
+                    Visa
+                </a>
+            </div>
+        </div>
+    </div>
+    <section class="page login">
+        <form>
+            <h3>Đăng nhập</h3>
+            <p class="login-sub">Tài khoản VianTravel sẽ được đăng nhập bằng số điện thoại hoặc tài khoản bên thứ ba đã
+                đăng ký</p>
+            <div class="row">
+                <div class="col-6 pr-1">
+                    <button type="button" class="btn btn-facebook">
+                        <img src="/assets/img/ic-facebook.svg" />
+                        Đăng nhập với facebook
+                    </button>
+                </div>
+                <div class="col-6 pl-1">
+                    <button type="button" class="btn btn-google">
+                        <img src="/assets/img/ic-google.svg" />
+                        Đăng nhập với google
+                    </button>
+                </div>
+            </div>
+            <div class="text-center">
+                <p class="login-or">
+                    hoặc đăng nhập bằng
+                </p>
+                <div class="login-or-line border-bottom"></div>
+            </div>
+
+            <div class="tabs">
+                <div class="tab active" data-target="email-mode">
+                    <img src="/assets/img/ic-envelope.svg" class="mr-2" />
+                    <img src="/assets/img/ic-envelope-active.svg" class="mr-2  img-active" />
+                    Email
+                </div>
+                <div class="tab" data-target="phone-mode">
+                    <img src="/assets/img/ic-phone.svg" class="mr-2" />
+                    <img src="/assets/img/ic-phone-active.svg" class="mr-2  img-active" />
+                    Số điện thoại
+                </div>
+            </div>
+            <div id="email-mode">
+                <div class="input-group">
+                    <input placeholder="Địa chỉ email" type="text" />
+                    <img src="/assets/img/ic-envelope.svg" />
+                </div>
+                <div class="input-group">
+                    <input placeholder="Mật khẩu" type="password" />
+                    <img src="/assets/img/ic-evelop.svg" />
+                </div>
+            </div>
+
+            <div id="phone-mode" style="display: none;" class="row">
+                <div class="col-3">
+                    <div class="input-group">
+                        <select>
+                            <option>+84</option>
+                            <option>+84</option>
+                            <option>+84</option>
+                            <option>+84</option>
+                            <option>+84</option>
+                            <option>+84</option>
+                            <option>+84</option>
+                            <option>+84</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="input-group">
+                        <input placeholder="Mật khẩu" type="password" />
+                        <img src="/assets/img/ic-envelope.svg" />
+                    </div>
+                </div>
+
+
+            </div>
+            <button class="btn btn-submit">Đăng nhập</button>
+            <div class="row">
+                <div class="col-6">
+                    <input type="checkbox" />
+                    <label>
+                        Nhớ tài khoản
+                    </label>
+                </div>
+                <div class="col-6 text-right">
+                    <a>Quên mật khẩu</a>
+                </div>
+            </div>
+            <p class="login-foot">Bạn chưa có tài khoản? <a href="register.html">Đăng ký ngay!</a></p>
+
+        </form>
+    </section>
+</body>
+<script src="assets/js/jquery-3.2.1.slim.min.js">
+</script>
+<script src="assets/js/popper.min.js">
+</script>
+<script src="assets/js/bootstrap.min.js">
+</script>
+<script src="assets/js/slick.min.js">
+</script>
+<script src="assets/js/script.js">
+</script>
+
+</html>
