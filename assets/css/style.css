@@ -640,7 +640,6 @@ footer input::placeholder {
 
 
 .login {
-    background-image: url(assets/img/bg-login.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 74px 10px;
