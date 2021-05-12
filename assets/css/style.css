@@ -981,7 +981,7 @@ font-weight: normal;
         width: 235px;
         background: white;
         left: 0;
-        z-index: 2;
+        z-index: 4;
     }
 
     .nav-menu::before {
@@ -1027,5 +1027,11 @@ font-weight: normal;
         display: block;
         width: 100%;
         background: white;
+    }
+    .header-top button {
+        padding: 5px 12px;
+    }
+    .login .form{
+        padding: 20px;
     }
 }
