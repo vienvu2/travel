@@ -848,9 +848,18 @@ footer input::placeholder {
     padding-right: 20px;
 }
 
-.btn-sm {
+.btn-xs {
 
     height: 29px;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.btn-sm {
+
+    height: 41px;
 
     font-weight: 300;
     font-size: 14px;
@@ -1193,6 +1202,23 @@ a.btn {
     margin-bottom: 10px;
 }
 
+
+.tour-detail-content ul {
+    padding-inline-start: 20px;
+    list-style: none;
+}
+
+.tour-detail-content ul li::before {
+    content: "\2022";
+    color: #1A2B48;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: -16px;
+    margin-top: 0px;
+    position: absolute;
+}
+
+
 .tour-detail strong {
     font-weight: 500;
 
@@ -1233,6 +1259,7 @@ a.btn {
     border: 0;
 }
 
+
 .table-tour td {
     background: white;
 }
@@ -1246,6 +1273,7 @@ a.btn {
 
 .table-tour tr {
     border: 0;
+    border-color: #f8f8f8;
 }
 
 .table-tour tbody tr {
@@ -1258,6 +1286,96 @@ a.btn {
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;
+}
+
+.tour-book {
+    position: sticky;
+    top: 30px
+}
+
+.tour-book h5 {
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 7px;
+    margin-bottom: 7px;
+}
+
+.tour-book-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 7px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.tour-book-total p {
+    margin: 0;
+}
+
+.tour-book-total p:last-child {
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FF9332;
+}
+
+.tour-book-time {
+    padding: 11px 7px;
+    background: white;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    padding-right: 20px;
+}
+
+.tour-book-time span {
+    flex: 1;
+}
+
+.tour-book-price {
+    display: flex;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 7px;
+    align-items: center;
+}
+
+.tour-book-prices {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: white;
+
+}
+
+.tour-book-price input {
+    text-align: center;
+    width: 22px;
+    border: 0;
+    margin: 0 16px;
+    border-bottom: 0.5px solid #00000030;
+}
+
+.tour-book-price p {
+    flex: 1;
+    margin: 0;
+}
+
+.tour-book-price p:last-child {
+
+    color: #FF9332;
+    font-weight: 500;
 }
 
 @media only screen and (max-width: 768px) {
