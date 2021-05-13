@@ -1,3 +1,7 @@
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 $(document).click(function (event) {
   var $target = $(event.target);
   if (
@@ -42,6 +46,22 @@ $(".input-quantity button").click(function () {
   parent.find(".input-quantity-number").html(newQty);
   parent.find("input").val(newQty);
 });
+$(function () {
+  var a = $("#slider-range").slider({
+    range: true,
+    min: 0,
+    step: 100000,
+    max: 2000000,
+    values: [0, 2000000],
+    slide: function (event, ui) {
+      $("#slider-range-input").val(ui.values[0] + "-" + ui.values[1]);
+      $("#slider-range-value").html(
+        numberWithCommas(ui.values[0]) + " vnd - " + numberWithCommas(ui.values[1]) + " vnd"
+      );
+    },
+  });
+  console.log(a);
+});
 $("#book-items").slick({
   infinite: false,
   dots: true,
@@ -81,7 +101,6 @@ $("#promo-items").slick({
     },
   ],
 });
-
 
 $("#guide-items").slick({
   infinite: false,
@@ -139,7 +158,6 @@ $("#customer-items").slick({
   ],
 });
 
-
 $("#top-location").slick({
   infinite: false,
   dots: true,
@@ -157,5 +175,3 @@ $("#top-location").slick({
     },
   ],
 });
-
-
