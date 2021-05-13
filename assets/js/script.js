@@ -13,6 +13,13 @@ $(document).click(function (event) {
   }
 });
 
+$(".filter-tour-bg").click(function(){
+  $('.filter-tour').hide();
+})
+
+$(".filter-tour-header .close").click(function(){
+  $('.filter-tour').hide();
+})
 $(".menu-mobile").click(function () {
   $(".nav-menu").toggle();
 });
@@ -65,6 +72,9 @@ $(function () {
   });
   $(".datepicker").datepicker();
 });
+$('#openFilter').click(function(){
+  $('.filter-tour').show();
+})
 $("#book-items").slick({
   infinite: false,
   dots: true,

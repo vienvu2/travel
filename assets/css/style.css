@@ -1374,6 +1374,65 @@ a.btn {
 
     .filter-tour {
         display: none;
+        position: fixed;
+        z-index: 1;
+        top: 80px;
+        right: 0;
+        background: #F8F8F8;
+        min-width: 235px;
+        max-height: calc(100vh - 150px);
+        overflow: auto;
+    }
+
+    .filter-tour-header .close {
+        float: left;
+    }
+
+    .filter-tour-header {
+        position:sticky;
+        top: 0;
+        text-align: center;
+        background: #FF9332;
+        padding: 14px 10px;
+    }
+
+    .filter-tour-header p {
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        margin: 9px 0 23px 0;
+    }
+
+    .filter-tour-header button {
+
+        height: 25px;
+        border: 1px solid #FFFFFF;
+        border-radius: 98px;
+
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #FFFFFF;
+        width: 47%;
+        background: transparent;
+
+    }
+
+    .filter-content {
+        margin-top: -22px ;
+        background: #F8F8F8;
+    }
+
+    .filter-tour-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #0004;
+        z-index: -1;
     }
 
     .result-tour h2 {
