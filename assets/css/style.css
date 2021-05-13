@@ -836,31 +836,40 @@ footer input::placeholder {
     font-size: 23px;
 }
 
-.btn.btn-primary,
-.login .btn-submit {
+.btn {
     height: 55px;
-    background: #FF9332;
     border-radius: 98px;
-    width: 100%;
-    display: block;
+    font-size: 18px;
     border: 0;
-
-    font-weight: 500;
+    font-weight: 300;
     font-size: 18px;
     line-height: 21px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+a.btn {
+    padding-top: 16px;
+}
+
+.btn.btn-primary,
+.login .btn-submit {
+    background: #FF9332;
+    width: 100%;
+    display: block;
     color: #FFFFFF;
-
-
 }
 
 .login .btn-submit {
+    font-weight: 500;
     margin-bottom: 17px;
 }
 
+.btn.btn-outline-primary,
 .login .btn-submit-outline {
 
     font-weight: normal;
-    background: white;
+    background: transparent;
     border: 1px solid #FF9332;
     color: #FF9332;
 }
@@ -965,6 +974,104 @@ footer input::placeholder {
     line-height: 21px;
     padding: 10px 0;
     margin: 0 -10px;
+}
+
+.result-tour {
+    padding-top: 16px;
+
+}
+
+.result-tour h2 {
+    margin: 0;
+    text-align: left;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.tour-item {
+    margin-top: 25px;
+    display: flex;
+    min-height: 225px;
+    background: white;
+}
+
+.tour-item-img {
+    width: 316px;
+    min-width: 316px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.tour-item-content {
+    padding: 13px;
+}
+
+.tour-item-content p {
+
+    font-weight: 300;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 9px;
+    line-height: 16px;
+}
+
+.tour-item-content p img {
+    vertical-align: top;
+}
+
+.tour-item-content button {
+    width: 200px;
+}
+
+.tour-item-name {
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.tour-item-price {
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FF9332;
+    margin-bottom: 18px;
+
+}
+
+.tour-item-location {
+    margin-bottom: 5px;
+}
+
+.tour-item-location img {
+    vertical-align: top;
+}
+
+.filter-item {
+    padding: 12px 19px;
+    margin-top: 22px;
+    background: white;
+}
+
+.filter-item h4 {
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+}
+
+.filter-item label {
+
+    font-size: 14px;
+    line-height: 16px;
+}
+.filter-item input[type=radio]{
+    height: 16px;
+    width: 16px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1167,16 +1274,23 @@ footer input::placeholder {
         padding: 20px;
     }
 
-    .form-search{
+    .form-search {
         flex-direction: column;
     }
-    .form-search .form-item{
+
+    .form-search .form-item {
         width: 100%;
     }
-    .form-search .form-item label{
+
+    .form-search .form-item label {
         margin: 0;
     }
-    .form-search .form-item button{
+
+    .form-search .form-item button {
         margin: 0 auto;
+    }
+
+    .input-quantity {
+        margin: 0;
     }
 }
