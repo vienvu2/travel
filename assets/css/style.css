@@ -411,12 +411,20 @@ button:focus {
     font-size: 24px;
     line-height: 28px;
 
-    height: 49px;
+    min-height: 49px;
     background: #0005;
     position: absolute;
     bottom: 0;
     width: 100%;
     padding: 11px 18px;
+}
+
+.location-item p span {
+    display: block;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .quangcao {
@@ -934,13 +942,18 @@ a.btn {
 }
 
 .form-search .form-item {
-    padding: 16px 26px;
+    padding: 16px 23px;
     border-right: 1px solid #C4C4C4;
-    flex: 1;
+    /* flex: 1; */
 }
 
 .form-search .form-item-group {
     display: flex;
+    align-items: center;
+    height: 41px;
+}
+.form-search .form-item-group  img{
+    height: 14px;
 }
 
 .form-search .form-item-group select {
@@ -973,7 +986,7 @@ a.btn {
 }
 
 .form-search .form-item label {
-
+    white-space: nowrap;
     font-weight: 300;
     font-size: 18px;
     line-height: 21px;
@@ -998,6 +1011,7 @@ a.btn {
 }
 
 .input-quantity {
+    width: 200px;
     height: 42px;
     font-weight: 500;
     font-size: 18px;
@@ -1163,12 +1177,12 @@ a.btn {
     width: 100%;
 }
 
-.detail-banner  .slick-dots li button{
+.detail-banner .slick-dots li button {
     border: 1px solid white;
     background: transparent;
 }
 
-.detail-banner   .slick-dots li.slick-active button{
+.detail-banner .slick-dots li.slick-active button {
     background: white;
 }
 
