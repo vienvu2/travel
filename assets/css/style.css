@@ -250,6 +250,24 @@ button:focus {
     height: 200px;
 }
 
+.book-item-promo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: white;
+
+    height: 50px;
+    width: 50px;
+
+    font-weight: 500;
+    font-size: 12px;
+    padding-top: 8px;
+    line-height: 14px;
+    padding-left: 5px;
+    background-image: linear-gradient(to bottom right, #FF9332 0%, #FF9332 50%, transparent 50%, transparent 100%);
+}
+
 .book-item-img>img {
     object-fit: cover;
     object-position: center;
@@ -365,6 +383,40 @@ button:focus {
     text-align: right;
     color: #FF9332;
 
+}
+
+#top-location {
+    overflow: hidden;
+    margin-top: 67px;
+}
+
+.location-item {
+    position: relative;
+    height: 350px;
+    margin: 0 17.5px;
+}
+
+.location-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 350px;
+    width: 100%;
+}
+
+.location-item p {
+    margin: 0;
+    color: white;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+
+    height: 49px;
+    background: #0005;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 11px 18px;
 }
 
 .quangcao {
@@ -876,6 +928,7 @@ footer input::placeholder {
     line-height: 21px;
 }
 
+.form-search .form-item:nth-child(4),
 .form-search .form-item:last-child {
     border: 0;
 }
@@ -914,4 +967,216 @@ footer input::placeholder {
     margin: 0 -10px;
 }
 
-@import url(./mobile.css);
+@media only screen and (max-width: 768px) {
+    .slick-dots {
+        display: block;
+    }
+
+    .header-top {
+        height: 50px;
+        padding-top: 12px;
+    }
+
+    .header-top button {
+        font-size: 14px;
+        line-height: 16px;
+        height: 25px;
+    }
+
+    .header-menu {
+        padding-top: 11px;
+        height: 65px;
+    }
+
+    .header-menu .logo {
+        height: 40px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .page.more {
+        display: none;
+    }
+
+    .header-menu-inner {
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .menu-mobile {
+        position: absolute;
+        left: 14px;
+    }
+
+    .banner {
+        padding-top: 54px;
+        padding-bottom: 24px;
+        min-height: auto;
+    }
+
+    .banner h1 {
+
+        font-size: 41.81px;
+        line-height: 49px;
+    }
+
+    .banner h3 {
+        font-weight: 300;
+        font-size: 12.543px;
+        line-height: 15px;
+        margin-bottom: 37px;
+    }
+
+    .banner .input-search {
+        height: 45px;
+    }
+
+    .banner .suggest {
+        padding-left: 20px;
+
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .banner .suggest {
+        font-size: 14px;
+        line-height: 16px;
+
+    }
+
+    .page {
+        padding-top: 24px;
+    }
+
+    .page h3 {
+
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .header-top a {
+        margin-right: 10px;
+
+    }
+
+    .header-top a.btn-login,
+    .header-top .dropdown a.dropdown-toggle {
+
+        font-size: 14px;
+        line-height: 16px;
+
+    }
+
+    .page-menu {
+        white-space: nowrap;
+        overflow: auto;
+    }
+
+    .page-menu a {
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: 26px;
+        padding-bottom: 10px;
+    }
+
+    .book-item {
+        margin: 0 15px;
+        width: 255px;
+    }
+
+    .news-item {
+        margin: 0 5px;
+        width: 350px;
+    }
+
+    .footer-last {
+        width: 80%;
+    }
+
+    footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .page .slick-list {
+        margin: 0;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 0;
+        width: 235px;
+        background: white;
+        left: 0;
+        z-index: 4;
+    }
+
+    .nav-menu::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #0004;
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    .nav-menu .nav-menu-header {
+        padding: 32px 0;
+        text-align: center;
+        background: #FF9332;
+        position: relative;
+    }
+
+    .nav-menu img {
+        margin-right: 14px;
+        width: 18px;
+    }
+
+    .nav-menu .nav-menu-header .btn-close {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .nav-menu .nav-menu-header h3 {
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: white;
+        margin: 0;
+    }
+
+    .nav-menu a {
+        display: block;
+        width: 100%;
+        background: white;
+    }
+
+    .header-top button {
+        padding: 5px 12px;
+    }
+
+    .login .form {
+        padding: 20px;
+    }
+
+    .form-search{
+        flex-direction: column;
+    }
+    .form-search .form-item{
+        width: 100%;
+    }
+    .form-search .form-item label{
+        margin: 0;
+    }
+    .form-search .form-item button{
+        margin: 0 auto;
+    }
+}

@@ -62,6 +62,27 @@ $("#book-items").slick({
   ],
 });
 
+$("#promo-items").slick({
+  infinite: false,
+  dots: true,
+  arrows: false,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        // centerMode: false,
+        slidesToScroll: 1,
+        variableWidth: true,
+        centerPadding: 0,
+      },
+    },
+  ],
+});
+
+
 $("#guide-items").slick({
   infinite: false,
   dots: true,
@@ -117,3 +138,24 @@ $("#customer-items").slick({
     },
   ],
 });
+
+
+$("#top-location").slick({
+  infinite: false,
+  dots: true,
+  arrows: false,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: 0,
+      },
+    },
+  ],
+});
+
+
