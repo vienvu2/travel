@@ -47,7 +47,7 @@ $(".input-quantity button").click(function () {
   parent.find("input").val(newQty);
 });
 $(function () {
-  var a = $("#slider-range").slider({
+  $("#slider-range").slider({
     range: true,
     min: 0,
     step: 100000,
@@ -56,11 +56,14 @@ $(function () {
     slide: function (event, ui) {
       $("#slider-range-input").val(ui.values[0] + "-" + ui.values[1]);
       $("#slider-range-value").html(
-        numberWithCommas(ui.values[0]) + " vnd - " + numberWithCommas(ui.values[1]) + " vnd"
+        numberWithCommas(ui.values[0]) +
+          " vnd - " +
+          numberWithCommas(ui.values[1]) +
+          " vnd"
       );
     },
   });
-  console.log(a);
+  $(".datepicker").datepicker();
 });
 $("#book-items").slick({
   infinite: false,
