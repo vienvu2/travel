@@ -1698,6 +1698,18 @@ a.btn {
         margin-bottom: 23px;
     }
 
+    .table-tour {
+        margin-left: -15px;
+        margin-right: -15px;
+        width: calc(100% + 30px);
+        max-width: calc(100% + 30px);
+    }
+
+    .table-tour tbody td,
+    .table-tour thead th {
+        padding-left: 23px;
+    }
+
     .tour-detail .detail-banner img {
         height: 350px;
     }
