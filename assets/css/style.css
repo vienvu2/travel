@@ -97,6 +97,10 @@ button:focus {
     background-size: cover;
 }
 
+.banner.tour {
+    padding-top: 55px;
+}
+
 .banner h1 {
     color: #FFFFFF;
     font-weight: 200;
@@ -773,11 +777,14 @@ footer input::placeholder {
     line-height: 19px;
     padding: 10px 20px;
 }
-.login input[type=checkbox]{
+
+.login input[type=checkbox] {
     height: 23px;
     width: 23px;
     font-size: 23px;
 }
+
+.btn.btn-primary,
 .login .btn-submit {
     height: 55px;
     background: #FF9332;
@@ -791,13 +798,16 @@ footer input::placeholder {
     line-height: 21px;
     color: #FFFFFF;
 
-    margin-bottom: 17px;
 
 }
 
-.login .btn-submit-outline{
+.login .btn-submit {
+    margin-bottom: 17px;
+}
 
-font-weight: normal;
+.login .btn-submit-outline {
+
+    font-weight: normal;
     background: white;
     border: 1px solid #FF9332;
     color: #FF9332;
@@ -837,201 +847,71 @@ font-weight: normal;
     line-height: 23px;
 }
 
-@media only screen and (max-width: 768px) {
-    .slick-dots {
-        display: block;
-    }
-
-    .header-top {
-        height: 50px;
-        padding-top: 12px;
-    }
-
-    .header-top button {
-        font-size: 14px;
-        line-height: 16px;
-        height: 25px;
-    }
-
-    .header-menu {
-        padding-top: 11px;
-        height: 65px;
-    }
-
-    .header-menu .logo {
-        height: 40px;
-    }
-
-    .nav-menu {
-        display: none;
-    }
-
-    .page.more {
-        display: none;
-    }
-
-    .header-menu-inner {
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-
-    .menu-mobile {
-        position: absolute;
-        left: 14px;
-    }
-
-    .banner {
-        padding-top: 54px;
-        padding-bottom: 24px;
-        min-height: auto;
-    }
-
-    .banner h1 {
-
-        font-size: 41.81px;
-        line-height: 49px;
-    }
-
-    .banner h3 {
-        font-weight: 300;
-        font-size: 12.543px;
-        line-height: 15px;
-        margin-bottom: 37px;
-    }
-
-    .banner .input-search {
-        height: 45px;
-    }
-
-    .banner .suggest {
-        padding-left: 20px;
-
-        font-size: 14px;
-        line-height: 16px;
-    }
-
-    .banner .suggest {
-        font-size: 14px;
-        line-height: 16px;
-
-    }
-
-    .page {
-        padding-top: 24px;
-    }
-
-    .page h3 {
-
-        font-size: 24px;
-        line-height: 28px;
-    }
-
-    .header-top a {
-        margin-right: 10px;
-
-    }
-
-    .header-top a.btn-login,
-    .header-top .dropdown a.dropdown-toggle {
-
-        font-size: 14px;
-        line-height: 16px;
-
-    }
-
-    .page-menu {
-        white-space: nowrap;
-        overflow: auto;
-    }
-
-    .page-menu a {
-        font-size: 16px;
-        line-height: 19px;
-        margin-right: 26px;
-        padding-bottom: 10px;
-    }
-
-    .book-item {
-        margin: 0 15px;
-        width: 255px;
-    }
-
-    .news-item {
-        margin: 0 5px;
-        width: 350px;
-    }
-
-    .footer-last {
-        width: 80%;
-    }
-
-    footer {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .page .slick-list {
-        margin: 0;
-    }
-
-    .nav-menu {
-        position: absolute;
-        top: 0;
-        width: 235px;
-        background: white;
-        left: 0;
-        z-index: 4;
-    }
-
-    .nav-menu::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: #0004;
-        z-index: -1;
-        pointer-events: none;
-    }
-
-    .nav-menu .nav-menu-header {
-        padding: 32px 0;
-        text-align: center;
-        background: #FF9332;
-        position: relative;
-    }
-
-    .nav-menu img {
-        margin-right: 14px;
-        width: 18px;
-    }
-
-    .nav-menu .nav-menu-header .btn-close {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-    }
-
-    .nav-menu .nav-menu-header h3 {
-
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 21px;
-        color: white;
-        margin: 0;
-    }
-
-    .nav-menu a {
-        display: block;
-        width: 100%;
-        background: white;
-    }
-    .header-top button {
-        padding: 5px 12px;
-    }
-    .login .form{
-        padding: 20px;
-    }
+.form-search {
+    background: white;
+    padding: 40px 0;
+    display: flex;
+    align-items: flex-end;
 }
+
+.form-search .form-item {
+    padding: 16px 26px;
+    border-right: 1px solid #C4C4C4;
+    flex: 1;
+}
+
+.form-search .form-item-group {
+    display: flex;
+}
+
+.form-search .form-item-group select,
+.form-search .form-item-group input {
+    border: 0;
+    border-bottom: 1px solid #C4C4C4;
+    font-weight: 300;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    line-height: 21px;
+}
+
+.form-search .form-item:last-child {
+    border: 0;
+}
+
+.form-search .form-item label {
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 45px;
+
+}
+
+.input-quantity button {
+    appearance: none;
+
+    width: 25px;
+    height: 25px;
+    background: #FF9332;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    border: 0;
+    color: white;
+    border-radius: 13px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.input-quantity {
+    height: 42px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 10px 0;
+    margin: 0 -10px;
+}
+
+@import url(./mobile.css);

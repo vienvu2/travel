@@ -32,6 +32,16 @@ $(".input-group .toggle-pass").click(function () {
     i.attr("type", "password");
   }
 });
+
+$(".input-quantity button").click(function () {
+  var parent = $(this).parent();
+  var number = $(this).data("qty") * 1;
+  console.log(number);
+  var current = parent.find(".input-quantity-number").html() * 1;
+  var newQty = number + current > 1 ? number + current : 1;
+  parent.find(".input-quantity-number").html(newQty);
+  parent.find("input").val(newQty);
+});
 $("#book-items").slick({
   infinite: false,
   dots: true,

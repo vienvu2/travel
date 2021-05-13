@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VianTravel</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="header-top">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <a href="/" class="d-none d-md-flex">
+                    <img width="20" src="assets/img/android.svg" />
+                </a>
+                <a href="/" class="d-none d-md-flex">
+                    <img width="20" src="assets/img/store.svg" />
+                </a>
+                <button>Trở thành đối tác</button>
+                <div class="mr-auto"></div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/img/vn-flag.jpg" />
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><img src="assets/img/vn-flag.jpg" /> VN</a>
+                        <a class="dropdown-item" href="#"><img src="assets/img/vn-flag.jpg" /> USA</a>
+                        <a class="dropdown-item" href="#"><img src="assets/img/vn-flag.jpg" /> SG</a>
+                    </div>
+                </div>
+
+                <div class="dropdown  ">
+                    <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        VND
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">VND</a>
+                        <a class="dropdown-item" href="#">USD</a>
+                        <a class="dropdown-item" href="#">SGD</a>
+                    </div>
+                </div>
+
+
+                <a class="btn-login  " href="./login.html">Đăng nhập</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="header-menu">
+        <div class="container header-menu-inner">
+            <img class="menu-mobile d-md-none" src="assets/img/ic-menu.svg" width="22" height="18" />
+            <a href="/">
+                <img class="logo" src="assets/img/logo.png" />
+            </a>
+
+            <div class="nav-menu">
+                <div class="nav-menu-header d-block d-md-none">
+                    <img class="btn-close" src="assets/img/ic-close.svg" />
+                    <h3>Menu</h3>
+                </div>
+                <a href="/" class="nav-menu-item ">
+                    <img class="d-inline-block d-md-none" src="assets/img/ic-home.svg" />
+                    Trang chủ
+                </a>
+                <a href="/tour.html" class="nav-menu-item active">
+                    <img class="d-inline-block d-md-none" src="assets/img/ic-tour.svg" />
+                    Tour
+                </a>
+                <a href="/hotel.html" class="nav-menu-item">
+                    <img class="d-inline-block d-md-none" src="assets/img/ic-hotel.svg" />
+                    Khách sạn
+                </a>
+                <a href="/combo.html" class="nav-menu-item">
+                    <img class="d-inline-block d-md-none" src="assets/img/ic-combo.svg" />
+                    Combo
+                </a>
+                <a href="/fight.html" class="nav-menu-item">
+                    <img class="d-inline-block d-md-none" src="assets/img/ic-flight.svg" />
+                    Fight
+                </a>
+                <a href="/visa.html" class="nav-menu-item">
+                    <img class="d-inline-block d-md-none" src="assets/img/ic-visa.svg" />
+                    Visa
+                </a>
+            </div>
+        </div>
+    </div>
+    <section class="banner tour" style="background-image: url(assets/img/mountain.jpg);">
+        <div class="container">
+            <h1>EXPLORING
+                <b> THE WORLD</b>
+            </h1>
+            <h3>Build your next holiday trip with usv</h3>
+            <form class="form-search">
+                <div class="form-item">
+                    <label>ĐIỂM ĐẾN</label>
+                    <div class="form-item-group">
+                        <img src="assets/img/ic-location.svg" />
+                        <input placeholder="Chọn điểm đến" name="from" />
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label>HÌNH THỨC DU LỊCH</label>
+                    <div class="form-item-group">
+                        <img src="assets/img/ic-location.svg" />
+                        <select name="type">
+                            <option>Văn hóa lịch sử</option>
+                            <option>Văn hóa lịch sử</option>
+                            <option>Văn hóa lịch sử</option>
+                            <option>Văn hóa lịch sử</option>
+                        </select>
+
+                    </div>
+
+                </div>
+                <div class="form-item">
+                    <label>NGÀY KHỎI HÀNH</label>
+                    <div class="form-item-group">
+                        <img src="assets/img/ic-calendar.svg" />
+                        <input placeholder="Chọn ngày về" name="return" />
+                    </div>
+
+                </div>
+                <div class="form-item">
+                    <label>HÀNH KHÁCH</label>
+                    <div class="form-item-group">
+                        <div class="input-quantity">
+                            <button data-qty="-1" type="button">-</button>
+                            <span class="input-quantity-number">1</span> người
+                            <button data-qty="1" type="button">+</button>
+
+                            <input type="hidden" name="quantity" />
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-item">
+                    <button class="btn btn-primary">Tìm ngay</button>
+                </div>
+            </form>
+    </section>
+    <section class="page popular">
+        <div class="container">
+            <h3>Top địa điểm du lịch</h3>
+            <div class="underline"></div>
+            <div id="book-items">
+                <div class="book-item">
+                    <img class="book-item-fav" src="assets/img/star-top.svg" />
+                    <div class="book-item-img">
+                        <img src="assets/img/img-sample.jpg" />
+                        <div class="book-item-btn">
+                            <img src="assets/img/ic-star-full.svg" />
+                            <img src="assets/img/ic-star-full.svg" />
+                            <img src="assets/img/ic-star-full.svg" />
+                            <img src="assets/img/ic-star-full.svg" />
+                            <img src="assets/img/ic-star.svg" />
+
+                            <button>Đặt Ngay</button>
+                        </div>
+                    </div>
+                    <p class="book-item-location"><img src="assets/img/ic-location.svg" />Việt Nam</p>
+                    <a href="/">
+                        <h4>Tour du lịch Đà Nẳng</h4>
+                    </a>
+
+                    <div class="book-item-rate">
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star.svg" />
+
+                        <span>50 review</span>
+                    </div>
+                    <div class="book-item-footer">
+                        <div class="book-item-time">
+                            <img src="assets/img/ic-calendar.svg" />
+                            5 ngày 4 đêm
+                        </div>
+                        <div class="book-item-price">
+                            <p>1.800.000 vnd</p>
+                            <h5>2.800.000 vnd</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <div class="book-item-img">
+                        <img src="assets/img/img-sample.jpg" />
+                        <div class="book-item-btn">
+                            <img src="assets/img/ic-star-full.svg" />
+                            <img src="assets/img/ic-star-full.svg" />
+                            <img src="assets/img/ic-star-full.svg" />
+                            <img src="assets/img/ic-star-full.svg" />
+                            <img src="assets/img/ic-star.svg" />
+
+                            <button>Đặt Ngay</button>
+                        </div>
+                    </div>
+                    <p class="book-item-location"><img src="assets/img/ic-location.svg" />Việt Nam</p>
+                    <a href="/">
+                        <h4>Tour du lịch Đà Nẳng</h4>
+                    </a>
+                    <div class="book-item-rate">
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star.svg" />
+
+                        <span>50 review</span>
+                    </div>
+                    <div class="book-item-footer">
+                        <div class="book-item-time">
+                            <img src="assets/img/ic-calendar.svg" />
+                            5 ngày 4 đêm
+                        </div>
+                        <div class="book-item-price">
+                            <p>1.800.000 vnd</p>
+                            <h5>2.800.000 vnd</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <div class="book-item-img">
+                        <img src="assets/img/img-sample.jpg" />
+                        <div class="book-item-btn">
+                            <img src="assets/img/ic-star-full.svg" />
+                            <img src="assets/img/ic-star-full.svg" />
+                            <img src="assets/img/ic-star-full.svg" />
+                            <img src="assets/img/ic-star-full.svg" />
+                            <img src="assets/img/ic-star.svg" />
+
+                            <button>Đặt Ngay</button>
+                        </div>
+                    </div>
+                    <p class="book-item-location"><img src="assets/img/ic-location.svg" />Việt Nam</p>
+                    <a href="/">
+                        <h4>Tour du lịch Đà Nẳng</h4>
+                    </a>
+                    <div class="book-item-rate">
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star.svg" />
+
+                        <span>50 review</span>
+                    </div>
+                    <div class="book-item-footer">
+                        <div class="book-item-time">
+                            <img src="assets/img/ic-calendar.svg" />
+                            5 ngày 4 đêm
+                        </div>
+                        <div class="book-item-price">
+                            <p>1.800.000 vnd</p>
+                            <h5>2.800.000 vnd</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <div class="book-item-img">
+                        <img src="assets/img/img-sample.jpg" />
+                        <div class="book-item-btn">
+                            <img src="assets/img/ic-star-full.svg" />
+                            <img src="assets/img/ic-star-full.svg" />
+                            <img src="assets/img/ic-star-full.svg" />
+                            <img src="assets/img/ic-star-full.svg" />
+                            <img src="assets/img/ic-star.svg" />
+
+                            <button>Đặt Ngay</button>
+                        </div>
+                    </div>
+                    <p class="book-item-location"><img src="assets/img/ic-location.svg" />Việt Nam</p>
+                    <a href="/">
+                        <h4>Tour du lịch Đà Nẳng</h4>
+                    </a>
+                    <div class="book-item-rate">
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star.svg" />
+
+                        <span>50 review</span>
+                    </div>
+                    <div class="book-item-footer">
+                        <div class="book-item-time">
+                            <img src="assets/img/ic-calendar.svg" />
+                            5 ngày 4 đêm
+                        </div>
+                        <div class="book-item-price">
+                            <p>1.800.000 vnd</p>
+                            <h5>2.800.000 vnd</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="quangcao">
+        <div class="container">
+            <img src="assets/img/quangcao.jpg" width="100%" />
+        </div>
+    </div>
+    <section class="page guide">
+        <div class="container">
+            <h3>Cẩm nang du lịch</h3>
+            <div class="underline"></div>
+            <p class="sub-title">Tổng hợp các địa điểm vui chơi, check-in, đại nhạc hội</p>
+            <div id="guide-items">
+                <div class="news-item">
+                    <img class="img" src="img/img-sample.jpg" />
+                    <div class="news-item-content">
+                        <div class="news-item-location">
+                            <img src="assets/img/ic-location.svg" />Việt Nam
+                        </div>
+                        <a href="/">
+                            <h5>18 món quà lưu niệm độc đáo nên mua khi đi du lịch Nhật Bản</h5>
+                        </a>
+
+                        <a href="/">Xem thêm >></a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img class="img" src="img/img-sample.jpg" />
+                    <div class="news-item-content">
+                        <div class="news-item-location">
+                            <img src="assets/img/ic-location.svg" />Việt Nam
+                        </div>
+                        <a href="/">
+                            <h5>18 món quà lưu niệm độc đáo nên mua khi đi du lịch Nhật Bản</h5>
+                        </a>
+                        <a href="/">Xem thêm >></a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img class="img" src="img/img-sample.jpg" />
+                    <div class="news-item-content">
+                        <div class="news-item-location">
+                            <img src="assets/img/ic-location.svg" />Việt Nam
+                        </div>
+                        <a href="/">
+                            <h5>18 món quà lưu niệm độc đáo nên mua khi đi du lịch Nhật Bản</h5>
+                        </a>
+
+                        <a href="/">Xem thêm >></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="page customer">
+        <div class="container">
+            <h3>Ý kiến khách hàng</h3>
+            <div class="underline"></div>
+            <div id="customer-items">
+                <div class="customer-item">
+                    <div class="customer-item-content">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
+                        Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                    </div>
+                    <div class="customer-item-name">Nguyễn Quốc Khánh</div>
+                    <div class="customer-item-rate">
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star.svg" />
+                    </div>
+
+                </div>
+                <div class="customer-item">
+                    <div class="customer-item-content">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
+                        Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                    </div>
+                    <div class="customer-item-name">Nguyễn Quốc Khánh</div>
+                    <div class="customer-item-rate">
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star.svg" />
+                    </div>
+
+                </div>
+                <div class="customer-item">
+                    <div class="customer-item-content">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
+                        Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                    </div>
+                    <div class="customer-item-name">Nguyễn Quốc Khánh</div>
+                    <div class="customer-item-rate">
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star-full.svg" />
+                        <img src="assets/img/ic-star.svg" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="page news">
+        <div class="container">
+            <h3>Tin tức</h3>
+            <div class="underline"></div>
+            <p class="sub-title">Cập nhật tin khuyến mãi, tin nội bộ và tin du lịch </p>
+
+            <div id="news-items">
+                <div class="news-item">
+                    <img class="img" src="img/img-sample.jpg" />
+                    <div class="news-item-content">
+                        <div class="news-item-location">
+                            <img src="assets/img/ic-calendar.svg" />20/05/2020
+                        </div>
+                        <a href="/">
+                            <h5>18 món quà lưu niệm độc đáo nên mua khi đi du lịch Nhật Bản</h5>
+                        </a>
+
+                        <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et </p>
+                        <a href="/">Xem thêm >></a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img class="img" src="img/img-sample.jpg" />
+                    <div class="news-item-content">
+                        <div class="news-item-location">
+                            <img src="assets/img/ic-calendar.svg" />20/05/2020
+                        </div>
+                        <a href="/">
+                            <h5>18 món quà lưu niệm độc đáo nên mua khi đi du lịch Nhật Bản</h5>
+                        </a>
+                        <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et </p>
+                        <a href="/">Xem thêm >></a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img class="img" src="img/img-sample.jpg" />
+                    <div class="news-item-content">
+                        <div class="news-item-location">
+                            <img src="assets/img/ic-calendar.svg" />20/05/2020
+                        </div>
+                        <a href="/">
+                            <h5>18 món quà lưu niệm độc đáo nên mua khi đi du lịch Nhật Bản</h5>
+                        </a>
+
+                        <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et </p>
+                        <a href="/">Xem thêm >></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="page more">
+        <div class="container">
+            <h3>Khám phá nhiều hơn nữa</h3>
+            <div class="underline"></div>
+            <p class="sub-title">Nhận ngay 5% cho đơn hàng đầu tiên trên ứng dụng Klook! </p>
+            <div class="row">
+                <div class="col-md-4 pr-0">
+                    <div class="more-content">
+                        <p>Nhập code khuyến mãi "BetterOnApp"
+                            tại trang thanh toán và đặt bất kỳ dịch vụ
+                            nào bạn yêu thích
+                        </p>
+                        <div class="row mt-5">
+                            <div class="col-5">
+                                <img class="mt-2" src="assets/img/dowload-store.png" />
+                                <img class="mt-4" src="assets/img/download-gg.png" />
+                            </div>
+                            <div class="col-7">
+                                <img width="130" src="assets/img/qrcode.jpeg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 pl-0">
+                    <img src="assets/img/beach.jpg" width="100%" height="100%" />
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>VỀ VIANTRAVEL </h4>
+                            <ul>
+                                <li><a href="/">Về chúng tôi VianTravel Blog</a></li>
+                                <li><a href="/">Cơ hội nghề nghiệp</a></li>
+                                <li><a href="/">Gửi yêu cầu hỗ trợ</a></li>
+                                <li><a href="/">Phiếu tặng quà</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Đối tác </h4>
+                            <ul>
+                                <li><a href="/">Đối tác đăng nhập</a></li>
+                                <li><a href="/">Đối tác kết nối</a></li>
+                                <li><a href="/">Chương trình cho người nổi tiếng</a></li>
+                                <li><a href="/">Chương trình cho đại lý</a></li>
+                                <li><a href="/">Hợp tác với chúng tôi</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Điều khoản sử dụng </h4>
+                            <ul>
+                                <li><a href="/">Điều khoản sử dụng</a></li>
+                                <li><a href="/">Chính sách bảo mặt của VianTravel</a></li>
+                                <li><a href="/">Chính sách Cookie</a></li>
+                                <li><a href="/">Chương trình thường phát hiện lỗi</a></li>
+                                <li><a href="/">Chính sách và quy định</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row align-items-center d-none d-md-flex">
+                        <div class="col-md-4">
+                            <img src="assets/img/dathongbao.png" />
+                        </div>
+                        <div class="col-md-4">
+                            <img src="assets/img/dowload-store.png" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <img src="assets/img/download-gg.png" />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-last">
+                        <h4 class="mb-2">Kênh thanh toán</h4>
+                        <div>
+                            <img src="assets/img/visa.jpg" class="mr-1" />
+                            <img src="assets/img/mastercard.jpg" class="mr-1" />
+                            <img src="assets/img/jcb.jpg" class="mr-1" />
+                        </div>
+                        <button>Hỏi đáp</button>
+                        <p>Kết nối với chúng tôi</p>
+                        <p><strong>Các deal du lịch giảm giá sẽ được gửi đến inbox của bạn</strong><br />
+                            Khi nhấp vào Đăng ký, bạn đồng ý với Các Điều khoản & Điều kiện và Chính sách Bảo Mật của
+                            chúng
+                            tôi
+                        </p>
+                        <input placeholder="Nhập email" />
+                        <button>Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+            <div class=" d-block d-md-none">
+                <img src="assets/img/dowload-store.png" class="d-block mb-2" />
+                <img src="assets/img/download-gg.png" class="d-block mb-2" />
+                <img src="assets/img/dathongbao.png" class="d-block mb-2" />
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="assets/js/jquery-3.2.1.slim.min.js">
+</script>
+<script src="assets/js/popper.min.js">
+</script>
+<script src="assets/js/bootstrap.min.js">
+</script>
+<script src="assets/js/slick.min.js">
+</script>
+<script src="assets/js/script.js">
+</script>
+
+</html>
