@@ -14,6 +14,10 @@ button:focus {
     outline: 0;
 }
 
+.fw-normal{
+    font-weight: normal!important;
+}
+
 .dropdown-toggle::after {
     height: 6px;
     width: 6px;
@@ -938,6 +942,7 @@ a.btn {
     background: white;
     padding: 40px 0;
     display: flex;
+    /* flex-wrap: wrap; */
     align-items: flex-end;
 }
 
@@ -1051,6 +1056,7 @@ a.btn {
 
 .tour-item-content {
     padding: 13px;
+    flex: 1;
 }
 
 .tour-item-content p {
