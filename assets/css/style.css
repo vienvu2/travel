@@ -1163,6 +1163,15 @@ a.btn {
     width: 100%;
 }
 
+.detail-banner  .slick-dots li button{
+    border: 1px solid white;
+    background: transparent;
+}
+
+.detail-banner   .slick-dots li.slick-active button{
+    background: white;
+}
+
 .tour-detail {
     padding-top: 16px;
     background: #F8F8F8;
