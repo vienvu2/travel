@@ -188,3 +188,13 @@ $("#top-location").slick({
     },
   ],
 });
+
+$("#detail-banner").slick({
+  infinite: false,
+  dots: true,
+  arrows: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+});
+
+
