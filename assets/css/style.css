@@ -1420,12 +1420,15 @@ a.btn {
     font-size: 14px;
     line-height: 14px;
 }
+.hotel-detail strong{
+    font-weight: 500;
+}
 
 .hotel-detail-warning {
     padding: 30px;
     background: rgba(255, 147, 50, 0.2);
     margin-bottom: 32px;
-    margin-top: 32px;
+    margin-top: 18px;
     margin-left: -15px;
     margin-right: -15px;
     display: flex;
@@ -1464,6 +1467,7 @@ a.btn {
     padding-bottom: 20px;
     background: #FFFFFF;
     margin-bottom: 33px;
+    margin-top: 33px;
 }
 
 .hotel-detail-book label {
@@ -1580,6 +1584,34 @@ a.btn {
     margin-bottom: 33px;
 }
 
+.hotel-detail-summary {
+    padding: 17px 11px;
+    background: #FFFFFF;
+    margin-top: 35px;
+}
+
+.hotel-detail-summary strong {
+    font-weight: 500;
+}
+.hotel-detail-summary p{
+    margin-bottom: 5px;
+}
+.hotel-detail-summary li{
+    margin-bottom: 11px;
+}
+.hotel-detail-summary p,
+.hotel-detail-summary li {
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+
+}
+.hotel-detail-summary ul{
+    padding-inline-start: 20px;
+}
 @media only screen and (max-width: 768px) {
     .slick-dots {
         display: block;
