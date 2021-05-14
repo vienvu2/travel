@@ -290,6 +290,7 @@ button:focus {
     background: #0005;
 }
 
+.book-item-btn a,
 .book-item-btn button {
     display: block;
     height: 30px;
@@ -306,7 +307,10 @@ button:focus {
     margin: 0 auto;
     cursor: pointer;
 }
-
+.book-item-btn a{
+    padding-top: 6px;
+    cursor: pointer;
+}
 .book-item-btn img {
     display: inline-block !important;
 }
@@ -860,23 +864,7 @@ footer input::placeholder {
     padding-right: 20px;
 }
 
-.btn-xs {
 
-    height: 29px;
-
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-}
-
-.btn-sm {
-
-    height: 41px;
-
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-}
 
 a.btn {
     padding-top: 16px;
@@ -895,6 +883,30 @@ a.btn {
     display: block;
     margin-bottom: 17px;
 }
+
+.btn.btn-xs {
+
+    height: 29px;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    width: auto;
+}
+
+.btn.btn-sm {
+
+    height: 41px;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    /* width: auto; */
+}
+.btn.btn-block{
+    width: 100%;
+}
+
 
 .btn.btn-outline-primary,
 .login .btn-submit-outline {
@@ -1420,7 +1432,8 @@ a.btn {
     font-size: 14px;
     line-height: 14px;
 }
-.hotel-detail strong{
+
+.hotel-detail strong {
     font-weight: 500;
 }
 
@@ -1593,12 +1606,15 @@ a.btn {
 .hotel-detail-summary strong {
     font-weight: 500;
 }
-.hotel-detail-summary p{
+
+.hotel-detail-summary p {
     margin-bottom: 5px;
 }
-.hotel-detail-summary li{
+
+.hotel-detail-summary li {
     margin-bottom: 11px;
 }
+
 .hotel-detail-summary p,
 .hotel-detail-summary li {
 
@@ -1609,9 +1625,14 @@ a.btn {
     color: #000000;
 
 }
-.hotel-detail-summary ul{
+.hotel-detail-summary button.btn{
+    width: 200px;
+}
+
+.hotel-detail-summary ul {
     padding-inline-start: 20px;
 }
+
 @media only screen and (max-width: 768px) {
     .slick-dots {
         display: block;
@@ -1826,6 +1847,7 @@ a.btn {
 
     .form-search .form-item button {
         margin: 0 auto;
+        display: block;
     }
 
     .input-quantity {
@@ -1962,4 +1984,11 @@ a.btn {
         height: 200px;
     }
 
+    .room-detail-img {
+        width: 100%;
+    }
+
+    .hotel-detail-book .col-md-3 {
+        text-align: center;
+    }
 }
