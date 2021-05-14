@@ -307,10 +307,12 @@ button:focus {
     margin: 0 auto;
     cursor: pointer;
 }
-.book-item-btn a{
+
+.book-item-btn a {
     padding-top: 6px;
     cursor: pointer;
 }
+
 .book-item-btn img {
     display: inline-block !important;
 }
@@ -903,7 +905,8 @@ a.btn {
     line-height: 16px;
     /* width: auto; */
 }
-.btn.btn-block{
+
+.btn.btn-block {
     width: 100%;
 }
 
@@ -1475,6 +1478,13 @@ a.btn {
     line-height: 28px;
 }
 
+.hotel-detail .hotel-detail-label {
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+}
+
 .hotel-detail-book {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1625,7 +1635,8 @@ a.btn {
     color: #000000;
 
 }
-.hotel-detail-summary button.btn{
+
+.hotel-detail-summary button.btn {
     width: 200px;
 }
 
