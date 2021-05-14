@@ -87,14 +87,6 @@ $(function () {
   if (document.getElementById("pickDate")) {
     new Litepicker({
       element: document.getElementById("pickDate"),
-      // singleMode: true,
-      // tooltipText: {
-      //   one: 'đêm',
-      //   other: 'đêm'
-      // },
-      // tooltipNumber: (totalDays) => {
-      //   return totalDays - 1;
-      // }
     });
   }
 });
