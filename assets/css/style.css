@@ -1911,6 +1911,7 @@ a.btn {
         text-align: center;
         background: #FF9332;
         padding: 14px 10px;
+        z-index: 4;
     }
 
     .filter-tour-header p {
