@@ -13,13 +13,13 @@ $(document).click(function (event) {
   }
 });
 
-$(".filter-tour-bg").click(function(){
-  $('.filter-tour').hide();
-})
+$(".filter-tour-bg").click(function () {
+  $(".filter-tour").hide();
+});
 
-$(".filter-tour-header .close").click(function(){
-  $('.filter-tour').hide();
-})
+$(".filter-tour-header .close").click(function () {
+  $(".filter-tour").hide();
+});
 $(".menu-mobile").click(function () {
   $(".nav-menu").toggle();
 });
@@ -70,11 +70,37 @@ $(function () {
       );
     },
   });
-  $(".datepicker").datepicker();
+  if (document.getElementById("pickRange")) {
+    new Litepicker({
+      element: document.getElementById("pickRange"),
+      singleMode: false,
+      tooltipText: {
+        one: "ngày",
+        other: "ngày",
+      },
+      tooltipNumber: (totalDays) => {
+        return totalDays;
+      },
+    });
+  }
+
+  if (document.getElementById("pickDate")) {
+    new Litepicker({
+      element: document.getElementById("pickDate"),
+      // singleMode: true,
+      // tooltipText: {
+      //   one: 'đêm',
+      //   other: 'đêm'
+      // },
+      // tooltipNumber: (totalDays) => {
+      //   return totalDays - 1;
+      // }
+    });
+  }
 });
-$('#openFilter').click(function(){
-  $('.filter-tour').show();
-})
+$("#openFilter").click(function () {
+  $(".filter-tour").show();
+});
 $("#book-items").slick({
   infinite: false,
   dots: true,
@@ -196,5 +222,3 @@ $("#detail-banner").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
 });
-
-

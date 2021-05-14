@@ -402,7 +402,7 @@
                         <img src="assets/img/ic-close-cam.svg" />
                     </button>
                 </div>
-                <form class="form-search pt-0" action="./tour-result.html">
+                <form autocomplete="off"  class="form-search pt-0" action="./tour-result.html">
                     <div class="form-item">
                         <label>ĐIỂM ĐẾN</label>
                         <div class="form-item-group">
@@ -428,7 +428,7 @@
                         <label>NGÀY KHỎI HÀNH</label>
                         <div class="form-item-group">
                             <img src="assets/img/ic-calendar.svg" />
-                            <input class="datepicker" placeholder="Chọn ngày về" name="return" />
+                            <input id="pickDate" class="datepicker" placeholder="Chọn ngày về" name="return" />
                         </div>
 
                     </div>
@@ -542,6 +542,7 @@
 </script>
 <script src="assets/js/jquery-ui.js">
 </script>
+<script src="assets/js/litepicker.js"></script>
 <script src="assets/js/script.js">
 </script>
 
