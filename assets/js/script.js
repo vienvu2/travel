@@ -221,3 +221,11 @@ $("#detail-banner").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
 });
+
+$("#home-banner").slick({
+  infinite: false,
+  dots: true,
+  arrows: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+});
