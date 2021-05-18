@@ -9,6 +9,9 @@ a:hover {
     text-decoration: none;
 }
 
+.pointer{
+    cursor: pointer;
+}
 *,
 button:focus {
     outline: 0;
@@ -235,6 +238,7 @@ button:focus {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
     position: relative;
     margin: 0 15px;
+    display: block;
 }
 
 .book-item:hover .book-item-btn {

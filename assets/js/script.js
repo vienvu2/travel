@@ -54,22 +54,24 @@ $(".input-quantity button").click(function () {
   parent.find("input").val(newQty);
 });
 $(function () {
-  $("#slider-range").slider({
-    range: true,
-    min: 0,
-    step: 100000,
-    max: 2000000,
-    values: [0, 2000000],
-    slide: function (event, ui) {
-      $("#slider-range-input").val(ui.values[0] + "-" + ui.values[1]);
-      $("#slider-range-value").html(
-        numberWithCommas(ui.values[0]) +
-          " vnd - " +
-          numberWithCommas(ui.values[1]) +
-          " vnd"
-      );
-    },
-  });
+  if ($("#slider-range").slider) {
+    $("#slider-range").slider({
+      range: true,
+      min: 0,
+      step: 100000,
+      max: 2000000,
+      values: [0, 2000000],
+      slide: function (event, ui) {
+        $("#slider-range-input").val(ui.values[0] + "-" + ui.values[1]);
+        $("#slider-range-value").html(
+          numberWithCommas(ui.values[0]) +
+            " vnd - " +
+            numberWithCommas(ui.values[1]) +
+            " vnd"
+        );
+      },
+    });
+  }
   if (document.getElementById("pickRange")) {
     new Litepicker({
       element: document.getElementById("pickRange"),
@@ -89,6 +91,11 @@ $(function () {
       element: document.getElementById("pickDate"),
     });
   }
+});
+$("#checkbox").change(function (e) {
+  const checked = $(this).is(":checked");
+  console.log(checked);
+  $('button.submit').prop('disabled', !checked)
 });
 $("#openFilter").click(function () {
   $(".filter-tour").show();
