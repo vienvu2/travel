@@ -229,10 +229,38 @@ $("#home-banner").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
 });
+var currentTime = 0;
+function setCountTime(time, cb) {
+  setInterval(function () {
+    time = time - 1;
+    currentTime = time;
+    if (time <= 0) {
+      cb();
+      $("#time-count").html("");
+    } else {
+      $("#time-count").html(time + "s");
+    }
+  }, 1000);
+}
 
 $("#sendOTP").click(function () {
   var phone = $("#phoneNumber").val();
   var phonePre = $("#phonePre").val();
-  console.log('phone', phone, phonePre)
+
+  setTimeout(function () {
+    $("#resend").css("opacity", 0.5);
+    $("#resend").css("cursor", "bane");
+    $("#sendOTP").hide();
+    $("#inputOTP").show();
+    setCountTime(30, function () {});
+  }, 1000);
   // sentOtp()
+});
+
+$("#resend").click(function () {
+  console.log("currentTime", currentTime);
+  if (currentTime > 0) {
+    alert("Hãy đợi đủ 30s để hệ thống gửi lại OTP");
+    return;
+  }
 });

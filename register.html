@@ -150,7 +150,7 @@
             <form id="phone-mode" style="display: none;" class="row">
                 <div class="col-md-3">
                     <div class="input-group">
-                        <select>
+                        <select name="phonePre" id="phonePre">
                             <option>+84</option>
                             <option>+84</option>
                             <option>+84</option>
@@ -164,17 +164,25 @@
                 </div>
                 <div class="col-md-9">
                     <div class="input-group">
-                        <input placeholder="Nhập số điện thoại" />
+                        <input name="phoneNumber" id="phoneNumber" placeholder="Nhập số điện thoại" />
                         <img src="assets/img/ic-phone.svg" style="opacity: 0.5;" />
                     </div>
                 </div>
-
-                <button class="btn btn-primary btn-outline-primary btn-block mt-4 mb-4" type="button">Gửi mã xác nhận</button>
-                <button class="btn btn-submit submit" disabled type="submit">Đăng nhập</button>
+                <div class="col-md-12">
+                    <button id="sendOTP" class="btn btn-primary btn-outline-primary btn-block mt-4 mb-4"
+                        type="button">Gửi
+                        mã xác nhận</button>
+                    <div id="inputOTP" class="input-group mb-4" style="display: none;">
+                        <input placeholder="Nhập mã xác nhận" name="otp" />
+                        <a class="pointer" id="resend">Gửi lại mã xác nhận </a>&nbsp;
+                        <span class="text-danger" id="time-count"></span>
+                    </div>
+                    <button class="btn btn-submit submit" disabled type="submit">Đăng nhập</button>
+                </div>
 
             </form>
             <div>
-                <input type="checkbox"  id="checkbox"  />
+                <input type="checkbox" id="checkbox" />
                 <label for="checkbox">
                     Tôi đồng ý với các điều khoản của VIAN TRAVEL
                 </label>
