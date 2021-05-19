@@ -149,7 +149,7 @@
             <form id="phone-mode" style="display: none;" class="row">
                 <div class="col-md-3">
                     <div class="input-group">
-                        <select>
+                        <select id="phonePre">
                             <option>+84</option>
                             <option>+84</option>
                             <option>+84</option>
@@ -163,12 +163,12 @@
                 </div>
                 <div class="col-md-9">
                     <div class="input-group">
-                        <input placeholder="Nhập số điện thoại" />
+                        <input id="phoneNumber" placeholder="Nhập số điện thoại" />
                         <img src="assets/img/ic-phone.svg" style="opacity: 0.5;" />
                     </div>
                 </div>
 
-                <button class="btn btn-primary btn-outline-primary btn-block mt-4 mb-4" type="button">Gửi mã xác nhận</button>
+                <button id="sendOTP" class="btn btn-primary btn-outline-primary btn-block mt-4 mb-4" type="button">Gửi mã xác nhận</button>
                 <button class="btn btn-submit">Đăng nhập</button>
 
             </form>

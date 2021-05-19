@@ -100,12 +100,15 @@ button:focus {
 
 .banner {
     min-height: 686px;
-
-
+    height: calc(100vh - 130px);
     position: relative;
+    background-position: center;
+    background-size: cover;
 }
 
 .banner #home-banner img {
+    min-height: 686px;
+    height: calc(100vh - 130px);
     background-position: center;
     background-size: cover;
 }

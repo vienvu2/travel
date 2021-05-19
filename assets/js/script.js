@@ -95,7 +95,7 @@ $(function () {
 $("#checkbox").change(function (e) {
   const checked = $(this).is(":checked");
   console.log(checked);
-  $('button.submit').prop('disabled', !checked)
+  $("button.submit").prop("disabled", !checked);
 });
 $("#openFilter").click(function () {
   $(".filter-tour").show();
@@ -228,4 +228,11 @@ $("#home-banner").slick({
   arrows: false,
   slidesToShow: 1,
   slidesToScroll: 1,
+});
+
+$("#sendOTP").click(function () {
+  var phone = $("#phoneNumber").val();
+  var phonePre = $("#phonePre").val();
+  console.log('phone', phone, phonePre)
+  // sentOtp()
 });
