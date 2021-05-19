@@ -92,7 +92,8 @@ button:focus {
     cursor: pointer;
     color: #343843;
     position: relative;
-    display: inline-block;
+    background: white;
+    /* display: inline-block; */
 }
 
 .nav-menu .nav-menu-item:hover .sub-menus {
@@ -1869,6 +1870,41 @@ a.btn {
     .page .slick-list {
         margin: 0;
     }
+    .nav-menu .nav-menu-item{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .nav-menu .nav-menu-item a{
+        display: inline-block;
+        margin-left: 24px;
+        /* display: flex; */
+    }
+    .nav-menu .nav-menu-item:hover{
+        background: white;
+    }
+    .sub-menus{
+        max-height: 2000px!important;
+        min-width: auto;
+        max-width: auto;
+        position: relative;
+        top: 0;
+        padding-top: 20px;
+    }
+    .sub-menus.sub-menus-short{
+        min-width: auto;
+        top: 0;
+        max-width: auto;
+        padding-top: 20px;
+    }
+    .sub-menus.sub-menus-short a:first-child{
+        margin-top: 0;
+    }
+    .sub-menus  p{
+        display: none;
+    }
+    .sub-menus a{
+        margin-bottom: 9px;
+    }
 
     .nav-menu {
         position: absolute;
@@ -1877,6 +1913,8 @@ a.btn {
         background: white;
         left: 0;
         z-index: 4;
+        max-height: calc(100vh - 100px);
+        overflow: auto;
     }
 
     .nav-menu::before {
@@ -1895,12 +1933,16 @@ a.btn {
         padding: 32px 0;
         text-align: center;
         background: #FF9332;
-        position: relative;
+        position: sticky;
+        top:  -1px;
+        z-index: 1;
+        
     }
 
     .nav-menu img {
         margin-right: 14px;
         width: 18px;
+        position: absolute;
     }
 
     .nav-menu .nav-menu-header .btn-close {
