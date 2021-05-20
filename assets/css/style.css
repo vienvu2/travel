@@ -1,7 +1,7 @@
 body {
     background: #F8F8F8;
     color: #343843;
-    position: relative;
+    /* position: relative; */
     font-family: 'Roboto';
 }
 
@@ -163,25 +163,26 @@ button:focus {
 
 .banner {
     height: 520px;
-    /* height: calc(100vh - 130px); */
     position: relative;
-    background-position: center;
-    background-size: cover;
+    /* display: contents; */
+}
+
+.banner .home-banner {
+    position: absolute;
+    width: 100%;
 }
 
 .banner .banner-img{
     height: 520px;
-    /* height: calc(100vh - 130px); */
     background-position: center;
     background-size: cover;
 }
 
 .banner .banner-content {
-    padding-top: 350px;
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
+    z-index: 1000;
+    bottom: 100px;
 }
 
 .banner.tour {
@@ -225,7 +226,7 @@ button:focus {
     margin-right: 10px;
 }
 
-.banner .banner-brand h3 span {
+.banner .banner-brand h3 a {
 
     font-weight: 300;
     font-size: 18px;
@@ -1094,12 +1095,16 @@ a.btn {
     background: white;
     color: #FF9332;
 }
-
+.form-search.stick-top{
+    position: fixed;
+    top: 0;
+    width: 1110px;
+    box-shadow: 5px 5px 5px #ccc2;
+}
 .form-search {
     background: white;
     height: 60px;
     display: flex;
-    /* flex-wrap: wrap; */
     align-items: center;
 }
 
@@ -1107,6 +1112,10 @@ a.btn {
     padding: 0px 14px;
     border-left: 1px solid #C4C4C4;
     flex: 1;
+}
+.form-search .form-item:first-child{
+    border: 0;
+    width: 150px;
 }
 
 .select2-container {

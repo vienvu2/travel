@@ -13,6 +13,17 @@ $(document).click(function (event) {
   }
 });
 
+$(document).scroll(function(event){
+  var scroll = $(window).scrollTop();
+  console.log(scroll)
+  if(scroll > 454){
+    $('.form-search').addClass('stick-top');
+  }else{
+    $('.form-search').removeClass('stick-top');
+  }
+  
+})
+
 $(".filter-tour-bg").click(function () {
   $(".filter-tour").hide();
 });
@@ -106,7 +117,7 @@ $(function () {
     new Litepicker({
       element: document.getElementById("dateTo"),
       lockDaysFilter: function (d) {
-        return d.getTime() < new Date().getTime();
+        return d.getTime() + 24 * 60 * 60 * 1000 < new Date().getTime();
       },
     });
   }
@@ -114,7 +125,7 @@ $(function () {
     new Litepicker({
       element: document.getElementById("dateFrom"),
       lockDaysFilter: function (d) {
-        return d.getTime() < new Date().getTime();
+        return d.getTime() +  24 * 60 * 60 * 1000 < new Date().getTime();
       },
     });
   }
@@ -122,7 +133,7 @@ $(function () {
     new Litepicker({
       element: document.getElementById("dateReturn"),
       lockDaysFilter: function (d) {
-        return d.getTime() < new Date().getTime();
+        return d.getTime() +  24 * 60 * 60 * 1000 < new Date().getTime();
       },
     });
   }
