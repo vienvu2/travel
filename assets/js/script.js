@@ -13,16 +13,17 @@ $(document).click(function (event) {
   }
 });
 
-$(document).scroll(function(event){
-  var scroll = $(window).scrollTop();
-  console.log(scroll)
-  if(scroll > 454){
-    $('.form-search').addClass('stick-top');
-  }else{
-    $('.form-search').removeClass('stick-top');
+$(document).scroll(function (event) {
+  if (window.innerWidth > 768) {
+    var scroll = $(window).scrollTop();
+    console.log(scroll);
+    if (scroll > 454) {
+      $(".form-search").addClass("stick-top");
+    } else {
+      $(".form-search").removeClass("stick-top");
+    }
   }
-  
-})
+});
 
 $(".filter-tour-bg").click(function () {
   $(".filter-tour").hide();
@@ -38,10 +39,10 @@ $(".nav-menu .btn-close").click(function () {
   $(".nav-menu").hide();
 });
 
-$(".nav-menu-item .toggle-child").click(function(){
-  $(this).toggleClass("rotate-90")
-  $(this).parent().parent().find('.sub-menus').toggle()
-})
+$(".nav-menu-item .toggle-child").click(function () {
+  $(this).toggleClass("rotate-90");
+  $(this).parent().parent().find(".sub-menus").toggle();
+});
 
 $(".login .tab").click(function () {
   $(".login .tab").removeClass("active");
@@ -130,7 +131,7 @@ $(function () {
     new Litepicker({
       element: document.getElementById("dateFrom"),
       lockDaysFilter: function (d) {
-        return d.getTime() +  24 * 60 * 60 * 1000 < new Date().getTime();
+        return d.getTime() + 24 * 60 * 60 * 1000 < new Date().getTime();
       },
     });
   }
@@ -138,7 +139,7 @@ $(function () {
     new Litepicker({
       element: document.getElementById("dateReturn"),
       lockDaysFilter: function (d) {
-        return d.getTime() +  24 * 60 * 60 * 1000 < new Date().getTime();
+        return d.getTime() + 24 * 60 * 60 * 1000 < new Date().getTime();
       },
     });
   }
@@ -322,4 +323,34 @@ $(".tabs .tab").click(function () {
   var idTarget = $(this).data("target");
   $(".tab-content").hide();
   $(idTarget).show();
+});
+
+$(".page-menu a").click(function () {
+  $(this).parent().find("a").removeClass("active");
+  $(this).addClass("active");
+  var idTarget = $(this).data("target");
+  var classParent = $(this).data("parent");
+  $(classParent).hide();
+  $(idTarget).show();
+  setTimeout(function () {
+    $(idTarget).slick({
+      infinite: false,
+      dots: true,
+      arrows: false,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            // centerMode: false,
+            slidesToScroll: 1,
+            variableWidth: true,
+            centerPadding: 0,
+          },
+        },
+      ],
+    });
+  }, 100);
 });

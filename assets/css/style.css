@@ -12,9 +12,11 @@ a:hover {
 .pointer {
     cursor: pointer;
 }
-.rotate-90{
+
+.rotate-90 {
     transform: rotate(90deg);
 }
+
 *,
 button:focus {
     outline: 0;
@@ -342,6 +344,7 @@ button:focus {
     cursor: pointer;
     margin-right: 44px;
     display: inline-block;
+    color: #343434;
 }
 
 .page-menu a.active {
@@ -533,28 +536,40 @@ button:focus {
     width: 100%;
 }
 
+.location-item .location-item-top {
+    position: absolute;
+    top: 0;
+    padding: 11px 18px;
+    width: 100%;
+}
+
+.location-item .location-item-bottom {
+    position: absolute;
+    background: #0005;
+    width: 100%;
+    padding: 11px 18px;
+    bottom: 0;
+}
+
+
 .location-item p {
     margin: 0;
+    display: block;
     color: white;
-
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-
-    min-height: 49px;
-    background: #0005;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 11px 18px;
 }
 
-.location-item p span {
-    display: block;
+.location-item p.location-item-sub {
 
     font-weight: 300;
     font-size: 18px;
     line-height: 21px;
+}
+
+.location-item p.location-item-price {
+    color: #FF9332;
 }
 
 .quangcao {
@@ -1126,7 +1141,7 @@ a.btn {
 
 .select2-container {
     height: 35px;
-    width: 100%!important;
+    width: 100% !important;
 }
 
 .select2-container--default .select2-selection--single {
@@ -1206,9 +1221,10 @@ a.btn {
 
 }
 
-.modal .form-search{
+.modal .form-search {
     height: auto;
 }
+
 .input-quantity button {
     appearance: none;
 
@@ -1841,6 +1857,8 @@ a.btn {
     padding-inline-start: 20px;
 }
 
+
+
 @media only screen and (max-width: 768px) {
     .slick-dots {
         display: block;
@@ -1953,7 +1971,7 @@ a.btn {
         padding-left: 16px;
         padding-right: 16px;
         background: white;
-    }   
+    }
 
     .nav-menu .nav-menu-item .link {
         /* display: inline-block; */
@@ -1964,8 +1982,9 @@ a.btn {
     .nav-menu .nav-menu-item:hover {
         background: white;
     }
+
     .nav-menu .nav-menu-item .sub-menus,
-    .nav-menu .nav-menu-item:hover .sub-menus{
+    .nav-menu .nav-menu-item:hover .sub-menus {
         max-height: initial !important;
         min-width: auto;
         position: relative;
@@ -1975,7 +1994,7 @@ a.btn {
     }
 
     .sub-menus.sub-menus-short {
-        min-width: auto;   
+        min-width: auto;
         top: 0;
         max-width: auto;
         padding-top: 20px;
@@ -2017,7 +2036,9 @@ a.btn {
     .banner .banner-img {
         position: relative;
     }
-    .home-banner .slick-dots, .detail-banner .slick-dots{
+
+    .home-banner .slick-dots,
+    .detail-banner .slick-dots {
         bottom: 50px;
     }
 
@@ -2028,7 +2049,8 @@ a.btn {
         font-size: 14px;
         line-height: 16px;
     }
-    .banner .banner-brand>div{
+
+    .banner .banner-brand>div {
         height: 50px;
     }
 
@@ -2066,7 +2088,8 @@ a.btn {
         width: 18px;
         /* position: absolute; */
     }
-    .nav-menu img:last-child{
+
+    .nav-menu img:last-child {
         margin-right: 0;
         margin-left: 24px;
     }
