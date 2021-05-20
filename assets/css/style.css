@@ -152,12 +152,12 @@ button:focus {
     background: #C4C4C430;
 }
 
-.nav-menu .nav-menu-item>a {
+.nav-menu .nav-menu-item .link {
     color: #343843;
-
+    flex: 1;
 }
 
-.nav-menu .nav-menu-item.active>a {
+.nav-menu .nav-menu-item.active .link {
     color: #FF9332;
 }
 
@@ -1952,9 +1952,9 @@ a.btn {
         padding-right: 16px;
     }
 
-    .nav-menu .nav-menu-item a {
-        display: inline-block;
-        margin-left: 24px;
+    .nav-menu .nav-menu-item .link {
+        /* display: inline-block; */
+        /* margin-left: 24px; */
         /* display: flex; */
     }
 
@@ -1963,12 +1963,13 @@ a.btn {
     }
 
     .sub-menus {
-        max-height: 2000px !important;
+        max-height: auto !important;
         min-width: auto;
         max-width: auto;
         position: relative;
         top: 0;
         padding-top: 20px;
+        display: none;
     }
 
     .sub-menus.sub-menus-short {
@@ -2060,7 +2061,10 @@ a.btn {
     .nav-menu img {
         margin-right: 14px;
         width: 18px;
-        position: absolute;
+        /* position: absolute; */
+    }
+    .nav-menu img:last-child{
+        margin-right: 0;
     }
 
     .nav-menu .nav-menu-header .btn-close {
