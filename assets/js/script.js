@@ -38,6 +38,11 @@ $(".nav-menu .btn-close").click(function () {
   $(".nav-menu").hide();
 });
 
+$(".nav-menu-item .toggle-child").click(function(){
+  $(this).toggleClass("rotate-90")
+  $(this).parent().parent().find('.sub-menus').toggle()
+})
+
 $(".login .tab").click(function () {
   $(".login .tab").removeClass("active");
   $(this).addClass("active");

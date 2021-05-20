@@ -12,7 +12,9 @@ a:hover {
 .pointer {
     cursor: pointer;
 }
-
+.rotate-90{
+    transform: rotate(90deg);
+}
 *,
 button:focus {
     outline: 0;
@@ -1950,7 +1952,7 @@ a.btn {
     .nav-menu .nav-menu-item {
         padding-left: 16px;
         padding-right: 16px;
-    }
+    }   
 
     .nav-menu .nav-menu-item .link {
         /* display: inline-block; */
@@ -1961,11 +1963,9 @@ a.btn {
     .nav-menu .nav-menu-item:hover {
         background: white;
     }
-
-    .sub-menus {
-        max-height: auto !important;
+    .nav-menu .nav-menu-item:hover .sub-menus{
+        max-height: initial !important;
         min-width: auto;
-        max-width: auto;
         position: relative;
         top: 0;
         padding-top: 20px;
@@ -1973,7 +1973,7 @@ a.btn {
     }
 
     .sub-menus.sub-menus-short {
-        min-width: auto;
+        min-width: auto;   
         top: 0;
         max-width: auto;
         padding-top: 20px;
@@ -2065,6 +2065,7 @@ a.btn {
     }
     .nav-menu img:last-child{
         margin-right: 0;
+        margin-left: 24px;
     }
 
     .nav-menu .nav-menu-header .btn-close {
