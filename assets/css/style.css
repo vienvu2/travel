@@ -92,7 +92,7 @@ button:focus {
     cursor: pointer;
     color: #343843;
     position: relative;
-    background: white;
+    /* background: white; */
     /* display: inline-block; */
 }
 
@@ -1198,12 +1198,15 @@ a.btn {
 .form-search .form-item label {
     white-space: nowrap;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21px;
-    margin-bottom: 45px;
+    margin-bottom: 15px;
 
 }
 
+.modal .form-search{
+    height: auto;
+}
 .input-quantity button {
     appearance: none;
 
@@ -2137,7 +2140,7 @@ a.btn {
     .filter-tour {
         display: none;
         position: fixed;
-        z-index: 1;
+        z-index: 2500;
         top: 80px;
         right: 0;
         background: #F8F8F8;

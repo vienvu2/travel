@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VianTravel</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/select2.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/slick.css" />
     <style>
@@ -427,58 +428,66 @@
         aria-hidden="true">
         <div class="modal-dialog" role="document">
 
-            <div class="modal-content">
+            <div class="modal-content pb-2">
                 <div class="pr-4 pt-3">
                     <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
                         <img src="assets/img/ic-close-cam.svg" />
                     </button>
                 </div>
-                <form autocomplete="off" class="form-search pt-0" action="./tour-result.html">
+                <form autocomplete="off" class="tab-content  form-search" id="form-tour" action="./tour-result.html">
                     <div class="form-item">
-                        <label>ĐIỂM ĐẾN</label>
+                        <label>Chọn điểm đến</label>
                         <div class="form-item-group">
                             <img src="assets/img/ic-location.svg" />
-                            <input placeholder="Chọn điểm đến" name="from" />
-                        </div>
-                    </div>
-                    <div class="form-item">
-                        <label>HÌNH THỨC DU LỊCH</label>
-                        <div class="form-item-group">
-                            <img src="assets/img/ic-location.svg" />
-                            <select name="type">
-                                <option>Văn hóa lịch sử</option>
-                                <option>Văn hóa lịch sử</option>
-                                <option>Văn hóa lịch sử</option>
-                                <option>Văn hóa lịch sử</option>
+                            <select class="selectFrom" name="location">
+                                <optgroup label="Chọn điểm đến">
+                                    <option>Hà Nội</option>
+                                    <option>TPHCM</option>
+                                    <option>TPHCM</option>
+                                    <option>TPHCM</option>
+                                    <option>TPHCM</option>
+                                    <option>TPHCM</option>
+                                    <option>TPHCM</option>
+                                    <option>Văn hóa lịch sử</option>
+                                    <option>Văn hóa lịch sử</option>
+                                </optgroup>
                             </select>
-
                         </div>
-
                     </div>
                     <div class="form-item">
-                        <label>NGÀY KHỎI HÀNH</label>
+                        <label>Hình thức du lịch</label>
+                        <div class="form-item-group">
+                            <img src="assets/img/ic-location.svg" />
+                            <select class="selectType" name="type">
+                                <optgroup label="Hình thức du lịch">
+                                    <option>Văn hóa lịch sử</option>
+                                    <option>Văn hóa lịch sử</option>
+                                    <option>Văn hóa lịch sử</option>
+                                    <option>Văn hóa lịch sử</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label>Chọn ngày về</label>
                         <div class="form-item-group">
                             <img src="assets/img/ic-calendar.svg" />
-                            <input id="pickDate" class="datepicker" placeholder="Chọn ngày về" name="return" />
+                            <input id="dateReturn" class="datepicker" placeholder="Chọn ngày về" name="to" />
                         </div>
-
                     </div>
                     <div class="form-item">
-                        <label>HÀNH KHÁCH</label>
+                        <label>SL người</label>
                         <div class="form-item-group">
                             <div class="input-quantity">
                                 <button data-qty="-1" type="button">-</button>
                                 <span class="input-quantity-number">1</span> người
                                 <button data-qty="1" type="button">+</button>
-
-                                <input type="hidden" name="quantity" />
-
+                                <input type="hidden" value="1" name="people" />
                             </div>
                         </div>
-
                     </div>
-                    <div class="form-item pl-1">
-                        <button class="btn btn-primary" style="width: 200px;">Tìm ngay</button>
+                    <div class="form-item p-2  text-center">
+                        <button class="btn btn-primary  btn-sm" style="width: 200px;">Tìm ngay</button>
                     </div>
                 </form>
             </div>
@@ -574,6 +583,8 @@
 <script src="assets/js/jquery-ui.js">
 </script>
 <script src="assets/js/litepicker.js"></script>
+
+<script src="assets/js/select2.js"></script>
 <script src="assets/js/script.js">
 </script>
 

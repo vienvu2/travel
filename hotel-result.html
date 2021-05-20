@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VianTravel</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/select2.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/slick.css" />
     <style>
@@ -414,40 +415,71 @@
         aria-hidden="true">
         <div class="modal-dialog" role="document">
 
-            <div class="modal-content">
+            <div class="modal-content pb-2">
                 <div class="pr-4 pt-3">
                     <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
                         <img src="assets/img/ic-close-cam.svg" />
                     </button>
                 </div>
-                <form autocomplete="off" class="form-search" action="./hotel-result.html">
+                <form autocomplete="off" class="tab-content form-search" action="./hotel-result.html">
                     <div class="form-item">
-                        <label>ĐIỂM ĐẾN</label>
+                        <label>Chọn điểm đến</label>
                         <div class="form-item-group">
                             <img src="assets/img/ic-location.svg" />
-                            <input placeholder="Chọn điểm đến" name="from" />
+                            <select class="selectFrom" name="location">
+                                <optgroup label="Chọn điểm đến">
+                                    <option>Hà Nội</option>
+                                    <option>TPHCM</option>
+                                    <option>TPHCM</option>
+                                    <option>TPHCM</option>
+                                    <option>TPHCM</option>
+                                    <option>TPHCM</option>
+                                    <option>TPHCM</option>
+                                    <option>Văn hóa lịch sử</option>
+                                    <option>Văn hóa lịch sử</option>
+                                </optgroup>
+                            </select>
                         </div>
                     </div>
                     <div class="form-item">
-                        <label>NGÀY NHẬN PHÒNG - NGÀY VỀ</label>
+                        <label>Ngày nhận phòng</label>
                         <div class="form-item-group">
                             <img src="assets/img/ic-calendar.svg" />
-                            <input id="pickRange" class="datepicker" placeholder="Chọn ngày nhận - ngày về
-                            " name="return" />
+                            <input id="dateFrom" class="datepicker" placeholder="Ngày nhận phòng " name="from" />
                         </div>
-
                     </div>
-                    <div class="form-item border-0">
-                        <label>SỐ NGƯỜI - PHÒNG</label>
+                    <div class="form-item">
+                        <label>Ngày trả phòng</label>
                         <div class="form-item-group">
-                            <img src="assets/img/ic-passenger.svg" /> &nbsp;
-                            <strong> 3 người lớn - 1 trẻ em - 2 phòng </strong>
-
+                            <img src="assets/img/ic-calendar.svg" />
+                            <input id="dateTo" class="datepicker" placeholder="Ngày trả phòng" name="to" />
                         </div>
-
                     </div>
-                    <div class="form-item pl-1">
-                        <button class="btn btn-primary" style="width: 200px;">Tìm ngay</button>
+                    <div class="form-item">
+                        <label>Người lớn</label>
+                        <div class="form-item-group">
+                            <div class="input-quantity">
+                                <button data-qty="-1" type="button">-</button>
+                                <span class="input-quantity-number">1</span> người lớn
+                                <button data-qty="1" type="button">+</button>
+                                <input type="hidden" value="1" name="people" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label>Trẻ em</label>
+                        <div class="form-item-group">
+                            <div class="input-quantity">
+                                <button data-qty="-1" type="button">-</button>
+                                <span class="input-quantity-number">1</span> trẻ em
+                                <button data-qty="1" type="button">+</button>
+                                <input type="hidden" value="1" name="child" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-item p-2  text-center">
+                        <button class="btn btn-primary  btn-sm" style="width: 200px;">Tìm ngay</button>
                     </div>
                 </form>
             </div>
@@ -544,6 +576,7 @@
 </script>
 <script src="assets/js/litepicker.js"></script>
 
+<script src="assets/js/select2.js"></script>
 <script src="assets/js/script.js">
 </script>
 
