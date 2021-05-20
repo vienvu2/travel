@@ -53,6 +53,22 @@ $(".input-quantity button").click(function () {
   parent.find(".input-quantity-number").html(newQty);
   parent.find("input").val(newQty);
 });
+$(document).ready(function () {
+  if ($(".selectFrom")) {
+    $(".selectFrom").select2({
+      placeholder: "Chọn điểm đến",
+      minimumResultsForSearch: -1,
+    });
+  }
+
+  if ($(".selectType")) {
+    $(".selectType").select2({
+      placeholder: "Hình thức du lịch",
+      minimumResultsForSearch: -1,
+    });
+  }
+});
+
 $(function () {
   if ($("#slider-range").slider) {
     $("#slider-range").slider({
@@ -86,9 +102,28 @@ $(function () {
     });
   }
 
-  if (document.getElementById("pickDate")) {
+  if (document.getElementById("dateTo")) {
     new Litepicker({
-      element: document.getElementById("pickDate"),
+      element: document.getElementById("dateTo"),
+      lockDaysFilter: function (d) {
+        return d.getTime() < new Date().getTime();
+      },
+    });
+  }
+  if (document.getElementById("dateFrom")) {
+    new Litepicker({
+      element: document.getElementById("dateFrom"),
+      lockDaysFilter: function (d) {
+        return d.getTime() < new Date().getTime();
+      },
+    });
+  }
+  if (document.getElementById("dateReturn")) {
+    new Litepicker({
+      element: document.getElementById("dateReturn"),
+      lockDaysFilter: function (d) {
+        return d.getTime() < new Date().getTime();
+      },
     });
   }
 });
@@ -263,4 +298,12 @@ $("#resend").click(function () {
     alert("Hãy đợi đủ 30s để hệ thống gửi lại OTP");
     return;
   }
+});
+
+$(".tabs .tab").click(function () {
+  $(this).parent().find(".tab").removeClass("active");
+  $(this).addClass("active");
+  var idTarget = $(this).data("target");
+  $(".tab-content").hide();
+  $(idTarget).show();
 });

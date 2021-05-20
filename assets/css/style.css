@@ -162,22 +162,22 @@ button:focus {
 }
 
 .banner {
-    min-height: 686px;
-    height: calc(100vh - 130px);
+    height: 520px;
+    /* height: calc(100vh - 130px); */
     position: relative;
     background-position: center;
     background-size: cover;
 }
 
-.banner #home-banner img {
-    min-height: 686px;
-    height: calc(100vh - 130px);
+.banner .banner-img{
+    height: 520px;
+    /* height: calc(100vh - 130px); */
     background-position: center;
     background-size: cover;
 }
 
 .banner .banner-content {
-    padding-top: 126px;
+    padding-top: 350px;
     position: absolute;
     top: 0;
     left: 0;
@@ -187,7 +187,7 @@ button:focus {
 .banner.tour {
     padding-top: 55px;
 }
-
+/* 
 .banner h1 {
     color: #FFFFFF;
     font-weight: 200;
@@ -202,14 +202,46 @@ button:focus {
     color: white;
     margin-bottom: 16px;
 }
+ */
 
-.banner h3 {
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
+.banner .banner-brand {
+    width: 414px;
+    height: 110px;
+    background: #0005;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 123px;
+}
+
+.banner .banner-brand h3 {
+    font-weight: 500;
     color: #FFFFFF;
-    margin-bottom: 116px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.banner .banner-brand h3 span {
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FF9332;
+}
+
+.banner .banner-brand>div {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    width: 122px;
+    height: 82px;
+    background: white;
+    padding: 0 11px;
 }
 
 .banner .input-search {
@@ -778,13 +810,13 @@ footer input::placeholder {
 .slick-dots li button {
     font-size: 0;
 
-    width: 9px;
-    height: 9px;
+    width: 12px;
+    height: 12px;
     appearance: none;
     border: 0;
     padding: 0;
     border-radius: 10px;
-    margin: 5px;
+    margin: 11px;
 }
 
 .slick-dots li.slick-active button {
@@ -1040,24 +1072,82 @@ a.btn {
     line-height: 23px;
 }
 
+.tabs {
+    display: flex;
+}
+
+.tabs .tab {
+    height: 40px;
+    width: 160px;
+    background: #fff5;
+    text-align: center;
+    padding-top: 12px;
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+.tabs .tab.active {
+    background: white;
+    color: #FF9332;
+}
+
 .form-search {
     background: white;
-    padding: 40px 0;
+    height: 60px;
     display: flex;
     /* flex-wrap: wrap; */
-    align-items: flex-end;
+    align-items: center;
 }
 
 .form-search .form-item {
-    padding: 16px 23px;
-    border-right: 1px solid #C4C4C4;
-    /* flex: 1; */
+    padding: 0px 14px;
+    border-left: 1px solid #C4C4C4;
+    flex: 1;
+}
+
+.select2-container {
+    height: 35px;
+    width: 100%;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 0;
+    height: 35px;
+    padding-top: 2px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.select2-dropdown {
+    min-width: 300px;
+    width: 300px;
+}
+
+.select2-container--default .select2-results__group {
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    background: #34384310;
+}
+
+.select2-container--open .select2-dropdown {
+    left: -27px;
+    top: 12px;
 }
 
 .form-search .form-item-group {
     display: flex;
     align-items: center;
     height: 41px;
+    width: 100%;
 }
 
 .form-search .form-item-group img {
@@ -1073,7 +1163,7 @@ a.btn {
 }
 
 .form-search .form-item-group input.datepicker {
-    font-weight: 500;
+    font-weight: 300;
     border-bottom: 0;
 }
 
@@ -1081,14 +1171,13 @@ a.btn {
     border: 0;
     border-bottom: 1px solid #C4C4C4;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 14px;
     display: block;
     width: 100%;
     padding: 10px;
     line-height: 21px;
 }
 
-.form-search .form-item:nth-child(4),
 .form-search .form-item:last-child {
     border: 0;
 }
@@ -1109,7 +1198,7 @@ a.btn {
     height: 25px;
     background: #FF9332;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 21px;
     border: 0;
     color: white;
@@ -1119,12 +1208,13 @@ a.btn {
 }
 
 .input-quantity {
+    text-align: center;
     width: 200px;
     height: 42px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 21px;
-    padding: 10px 0;
+    padding: 7px 0;
     margin: 0 -10px;
 }
 
@@ -1870,39 +1960,47 @@ a.btn {
     .page .slick-list {
         margin: 0;
     }
-    .nav-menu .nav-menu-item{
+
+    .nav-menu .nav-menu-item {
         padding-left: 16px;
         padding-right: 16px;
     }
-    .nav-menu .nav-menu-item a{
+
+    .nav-menu .nav-menu-item a {
         display: inline-block;
         margin-left: 24px;
         /* display: flex; */
     }
-    .nav-menu .nav-menu-item:hover{
+
+    .nav-menu .nav-menu-item:hover {
         background: white;
     }
-    .sub-menus{
-        max-height: 2000px!important;
+
+    .sub-menus {
+        max-height: 2000px !important;
         min-width: auto;
         max-width: auto;
         position: relative;
         top: 0;
         padding-top: 20px;
     }
-    .sub-menus.sub-menus-short{
+
+    .sub-menus.sub-menus-short {
         min-width: auto;
         top: 0;
         max-width: auto;
         padding-top: 20px;
     }
-    .sub-menus.sub-menus-short a:first-child{
+
+    .sub-menus.sub-menus-short a:first-child {
         margin-top: 0;
     }
-    .sub-menus  p{
+
+    .sub-menus p {
         display: none;
     }
-    .sub-menus a{
+
+    .sub-menus a {
         margin-bottom: 9px;
     }
 
@@ -1934,9 +2032,9 @@ a.btn {
         text-align: center;
         background: #FF9332;
         position: sticky;
-        top:  -1px;
+        top: -1px;
         z-index: 1;
-        
+
     }
 
     .nav-menu img {
