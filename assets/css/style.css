@@ -1859,7 +1859,7 @@ a.btn {
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
     .slick-dots {
         display: block;
     }

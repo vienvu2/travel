@@ -7,14 +7,14 @@ $(document).click(function (event) {
   if (
     !$target.closest(".header-menu").length &&
     $(".nav-menu").is(":visible") &&
-    window.innerWidth <= 768
+    window.innerWidth <= 992
   ) {
     $(".nav-menu").hide();
   }
 });
 
 $(document).scroll(function (event) {
-  if (window.innerWidth > 768) {
+  if (window.innerWidth > 992) {
     var scroll = $(window).scrollTop();
     console.log(scroll);
     if (scroll > 454) {
