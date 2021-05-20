@@ -58,7 +58,7 @@ button:focus {
     padding: 0px 0;
     /* position: sticky; */
     /* top: -1px; */
-    z-index: 2;
+    z-index: 2000;
     position: relative;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
 }
@@ -172,7 +172,7 @@ button:focus {
     width: 100%;
 }
 
-.banner .banner-img{
+.banner .banner-img {
     height: 520px;
     background-position: center;
     background-size: cover;
@@ -188,6 +188,7 @@ button:focus {
 .banner.tour {
     padding-top: 55px;
 }
+
 /* 
 .banner h1 {
     color: #FFFFFF;
@@ -1095,12 +1096,14 @@ a.btn {
     background: white;
     color: #FF9332;
 }
-.form-search.stick-top{
+
+.form-search.stick-top {
     position: fixed;
     top: 0;
     width: 1110px;
     box-shadow: 5px 5px 5px #ccc2;
 }
+
 .form-search {
     background: white;
     height: 60px;
@@ -1113,7 +1116,8 @@ a.btn {
     border-left: 1px solid #C4C4C4;
     flex: 1;
 }
-.form-search .form-item:first-child{
+
+.form-search .form-item:first-child {
     border: 0;
     width: 150px;
 }
@@ -1877,39 +1881,9 @@ a.btn {
     }
 
     .banner {
-        padding-top: 54px;
-        padding-bottom: 24px;
+        padding-top: 0px;
+        /* padding-bottom: 24px; */
         min-height: auto;
-    }
-
-    .banner h1 {
-
-        font-size: 41.81px;
-        line-height: 49px;
-    }
-
-    .banner h3 {
-        font-weight: 300;
-        font-size: 12.543px;
-        line-height: 15px;
-        margin-bottom: 37px;
-    }
-
-    .banner .input-search {
-        height: 45px;
-    }
-
-    .banner .suggest {
-        padding-left: 20px;
-
-        font-size: 14px;
-        line-height: 16px;
-    }
-
-    .banner .suggest {
-        font-size: 14px;
-        line-height: 16px;
-
     }
 
     .page {
@@ -2019,9 +1993,43 @@ a.btn {
         width: 235px;
         background: white;
         left: 0;
-        z-index: 4;
         max-height: calc(100vh - 100px);
         overflow: auto;
+    }
+
+    .banner .banner-brand {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background: white;
+        margin: 0;
+        height: 50px;
+        left: 0;
+    }
+
+    .banner .banner-img {
+        position: relative;
+    }
+    .home-banner .slick-dots, .detail-banner .slick-dots{
+        bottom: 50px;
+    }
+
+    .banner .banner-brand h3 {
+        flex: 1;
+        color: #343843;
+
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .banner .banner-brand>div{
+        height: 50px;
+    }
+
+    .banner .banner-brand h3 a {
+
+        font-size: 14px;
+        line-height: 16px;
+        display: block;
     }
 
     .nav-menu::before {
@@ -2094,12 +2102,13 @@ a.btn {
     }
 
     .form-search .form-item button {
-        margin: 0 auto;
-        display: block;
+        /* margin: 0 auto; */
+        /* display: block; */
     }
 
     .input-quantity {
-        margin: 0;
+        margin: 0 -10px;
+        text-align: left;
     }
 
     .tour-item {
@@ -2240,5 +2249,30 @@ a.btn {
 
     .hotel-detail-book .col-md-3 {
         text-align: center;
+    }
+
+    .banner .banner-content {
+        position: relative;
+        padding-top: 47px;
+        bottom: auto;
+    }
+
+    .form-search {
+        height: auto;
+    }
+
+    .form-search .form-item:first-child,
+    .form-search .form-item-group,
+    .form-search .form-item {
+        width: 100%;
+    }
+
+    .form-search .form-item-group {
+        height: 50px;
+        border-bottom: 0.5px solid #0003;
+    }
+
+    .tabs .tab {
+        width: 100px;
     }
 }
