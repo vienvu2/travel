@@ -1126,7 +1126,7 @@ a.btn {
 
 .select2-container {
     height: 35px;
-    width: 100%;
+    width: 100%!important;
 }
 
 .select2-container--default .select2-selection--single {
