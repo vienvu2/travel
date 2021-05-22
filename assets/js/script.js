@@ -74,14 +74,14 @@ $(document).ready(function () {
   if ($(".selectFrom")) {
     $(".selectFrom").select2({
       placeholder: "Chọn điểm đến",
-      minimumResultsForSearch: -1,
+      // minimumResultsForSearch: -1,
     });
   }
 
   if ($(".selectType")) {
     $(".selectType").select2({
       placeholder: "Hình thức du lịch",
-      minimumResultsForSearch: -1,
+      // minimumResultsForSearch: -1,
     });
   }
 });
