@@ -486,7 +486,7 @@ button:focus {
 }
 
 .book-item-time {
-
+    padding-bottom: 2px;
     font-weight: 300;
     font-size: 12px;
     line-height: 14px;
