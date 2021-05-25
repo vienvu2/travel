@@ -38,6 +38,8 @@ button:focus {
     height: 44px;
     background: #1A2B48;
     padding-top: 7px;
+    position: relative;
+    z-index: 20000;
 }
 
 .header-top a {
@@ -73,6 +75,9 @@ button:focus {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
+    background: transparent;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .header-menu-inner {
