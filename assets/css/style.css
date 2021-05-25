@@ -78,6 +78,7 @@ button:focus {
     background: transparent;
     appearance: none;
     -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .header-menu-inner {
@@ -988,6 +989,9 @@ footer input::placeholder {
     font-size: 16px;
     line-height: 19px;
     padding: 10px 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .login input[type=checkbox] {
@@ -1231,6 +1235,8 @@ a.btn {
 
 .input-quantity button {
     appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 
     width: 25px;
     height: 25px;
