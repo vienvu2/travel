@@ -5,6 +5,19 @@ body {
     font-family: 'Roboto';
 }
 
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url('data:image/svg+xml;utf8,<svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.5" d="M1 1L5.5 5.5L10 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"/> </svg>');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 16px;
+    background-size: 14px 8px;
+    border-radius: 2px;
+    margin-right: 11px;
+}
+
 a:hover {
     text-decoration: none;
 }
