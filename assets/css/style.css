@@ -2038,7 +2038,7 @@ a.btn {
 
     .nav-menu {
         position: fixed;
-        top: 40px;
+        top: 70px;
         width: 235px;
         background: white;
         left: 0;
@@ -2143,7 +2143,7 @@ a.btn {
     }
 
     .header-top button {
-        padding: 5px 12px;
+        padding: 4px 12px;
     }
 
     .login .form {
