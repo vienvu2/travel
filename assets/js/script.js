@@ -16,7 +16,6 @@ $(document).click(function (event) {
 $(document).scroll(function (event) {
   if (window.innerWidth > 992) {
     var scroll = $(window).scrollTop();
-    console.log(scroll);
     if (scroll > 454) {
       $(".form-search").addClass("stick-top");
     } else {
@@ -64,7 +63,6 @@ $(".input-group .toggle-pass").click(function () {
 $(".input-quantity button").click(function () {
   var parent = $(this).parent();
   var number = $(this).data("qty") * 1;
-  console.log(number);
   var current = parent.find(".input-quantity-number").html() * 1;
   var newQty = number + current > 1 ? number + current : 1;
   parent.find(".input-quantity-number").html(newQty);
@@ -146,7 +144,6 @@ $(function () {
 });
 $("#checkbox").change(function (e) {
   const checked = $(this).is(":checked");
-  console.log(checked);
   $("button.submit").prop("disabled", !checked);
 });
 $("#openFilter").click(function () {
@@ -310,7 +307,6 @@ $("#sendOTP").click(function () {
 });
 
 $("#resend").click(function () {
-  console.log("currentTime", currentTime);
   if (currentTime > 0) {
     alert("Hãy đợi đủ 30s để hệ thống gửi lại OTP");
     return;
@@ -332,25 +328,27 @@ $(".page-menu a").click(function () {
   var classParent = $(this).data("parent");
   $(classParent).hide();
   $(idTarget).show();
-  setTimeout(function () {
-    $(idTarget).slick({
-      infinite: false,
-      dots: true,
-      arrows: false,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            // centerMode: false,
-            slidesToScroll: 1,
-            variableWidth: true,
-            centerPadding: 0,
+  if (!$(idTarget).hasClass("slick-initialized")) {
+    setTimeout(function () {
+      $(idTarget).slick({
+        infinite: false,
+        dots: true,
+        arrows: false,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              // centerMode: false,
+              slidesToScroll: 1,
+              variableWidth: true,
+              centerPadding: 0,
+            },
           },
-        },
-      ],
-    });
-  }, 100);
+        ],
+      });
+    }, 100);
+  }
 });
