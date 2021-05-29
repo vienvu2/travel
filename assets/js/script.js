@@ -70,6 +70,7 @@ $(".input-quantity button").click(function () {
 });
 $(document).ready(function () {
   if ($(".selectFrom")) {
+    console.log($(".selectFrom"))
     $(".selectFrom").select2({
       placeholder: "Chọn điểm đến",
       // minimumResultsForSearch: -1,
