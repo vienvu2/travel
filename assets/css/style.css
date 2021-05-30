@@ -465,6 +465,7 @@ button:focus {
     font-size: 12px;
     line-height: 14px;
     padding: 9px;
+    padding-bottom: 4px;
     margin: 0;
 }
 
@@ -480,6 +481,7 @@ button:focus {
     margin: 4px;
     margin-left: 9px;
     color: #343843;
+    font-weight: 400;
 }
 
 .book-item-rate {
