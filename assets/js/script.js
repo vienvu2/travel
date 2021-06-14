@@ -70,7 +70,7 @@ $(".input-quantity button").click(function () {
 });
 $(document).ready(function () {
   if ($(".selectFrom")) {
-    console.log($(".selectFrom"))
+    console.log($(".selectFrom"));
     $(".selectFrom").select2({
       placeholder: "Chọn điểm đến",
       // minimumResultsForSearch: -1,
@@ -122,6 +122,12 @@ $(function () {
     new Litepicker({
       element: document.getElementById("dateTo"),
       lockDaysFilter: function (d) {
+        var to = document.getElementById("dateFrom");
+        if (to.value) {
+          return (
+            d.getTime() + 24 * 60 * 60 * 1000 < new Date(to.value).getTime()
+          );
+        }
         return d.getTime() + 24 * 60 * 60 * 1000 < new Date().getTime();
       },
     });
@@ -130,6 +136,14 @@ $(function () {
     new Litepicker({
       element: document.getElementById("dateFrom"),
       lockDaysFilter: function (d) {
+        var to = document.getElementById("dateTo");
+        if (to.value) {
+          return (
+            d.getTime() >
+              new Date(to.value).getTime() ||
+            d.getTime() + 24 * 60 * 60 * 1000 < new Date().getTime()
+          );
+        }
         return d.getTime() + 24 * 60 * 60 * 1000 < new Date().getTime();
       },
     });
