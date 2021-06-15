@@ -554,7 +554,8 @@ button:focus {
     object-fit: cover;
     object-position: center;
     height: 350px;
-    width: 100%;
+    /* width: 100%; */
+    width: 225px;
 }
 
 .location-item .location-item-top {
