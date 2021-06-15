@@ -139,8 +139,7 @@ $(function () {
         var to = document.getElementById("dateTo");
         if (to.value) {
           return (
-            d.getTime() >
-              new Date(to.value).getTime() ||
+            d.getTime() > new Date(to.value).getTime() ||
             d.getTime() + 24 * 60 * 60 * 1000 < new Date().getTime()
           );
         }
@@ -181,6 +180,16 @@ $("#book-items").slick({
         centerPadding: 0,
       },
     },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        // centerMode: false,
+        slidesToScroll: 2,
+        variableWidth: true,
+        centerPadding: 0,
+      },
+    },
   ],
 });
 
@@ -197,6 +206,16 @@ $("#promo-items").slick({
         slidesToShow: 1,
         // centerMode: false,
         slidesToScroll: 1,
+        variableWidth: true,
+        centerPadding: 0,
+      },
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        // centerMode: false,
+        slidesToScroll: 2,
         variableWidth: true,
         centerPadding: 0,
       },
@@ -220,6 +239,16 @@ $("#guide-items").slick({
         centerPadding: 0,
       },
     },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        // centerMode: false,
+        slidesToScroll: 2,
+        variableWidth: true,
+        centerPadding: 0,
+      },
+    },
   ],
 });
 
@@ -235,6 +264,16 @@ $("#news-items").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        variableWidth: true,
+        centerPadding: 0,
+      },
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        // centerMode: false,
+        slidesToScroll: 2,
         variableWidth: true,
         centerPadding: 0,
       },
@@ -257,6 +296,14 @@ $("#customer-items").slick({
         centerPadding: 0,
       },
     },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        centerPadding: 0,
+      },
+    },
   ],
 });
 
@@ -272,6 +319,14 @@ $("#top-location").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        centerPadding: 0,
+      },
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
         centerPadding: 0,
       },
     },
@@ -358,6 +413,16 @@ $(".page-menu a").click(function () {
               slidesToShow: 1,
               // centerMode: false,
               slidesToScroll: 1,
+              variableWidth: true,
+              centerPadding: 0,
+            },
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              // centerMode: false,
+              slidesToScroll: 2,
               variableWidth: true,
               centerPadding: 0,
             },
