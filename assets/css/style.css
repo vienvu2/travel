@@ -554,8 +554,7 @@ button:focus {
     object-fit: cover;
     object-position: center;
     height: 350px;
-    /* width: 100%; */
-    width: 250px;
+    width: 100%;
 }
 
 .location-item .location-item-top {
@@ -1889,7 +1888,9 @@ a.btn {
     .slick-dots {
         display: block;
     }
-
+    .location-item img {
+        width: 250px;
+    }
     .header-top {
         height: 50px;
         padding-top: 12px;
